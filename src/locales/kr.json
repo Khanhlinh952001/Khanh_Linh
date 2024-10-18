@@ -1,6 +1,7 @@
 {
-    "HomePage": {
-      "title": "jfskdlflksnwflk",
-      "about": "Go to the about page"
-    }
-  } 
+  "Header": {
+    "about": "소개",
+    "projects": "프로젝트",
+    "contact": "연락처"
+  }
+}

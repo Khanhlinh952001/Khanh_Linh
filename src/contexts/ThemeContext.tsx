@@ -1,10 +1,9 @@
-// context/ThemeContext.tsx
-"use client"
+"use client";
 import React, { createContext, useContext, useState, useEffect, FC } from 'react';
 import { Theme, THEME_LOCAL_STORAGE_KEY } from '../types/theme';
 
 type ThemeContextType = {
-  theme: Theme;
+  theme: Theme | null; // Cho phép giá trị ban đầu là null
   toggleTheme: () => void;
 };
 
@@ -19,29 +18,32 @@ export const useThemeContext = (): ThemeContextType => {
 };
 
 const getThemeFromLocalStorage = (): Theme => {
-  if (typeof window !== 'undefined') {
-    const storedTheme = localStorage.getItem(THEME_LOCAL_STORAGE_KEY) as Theme | null;
-    if (storedTheme) {
-      return storedTheme;
-    }
-    // Nếu không có theme trong localStorage, kiểm tra chế độ hệ thống
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return prefersDark ? Theme.DARK : Theme.LIGHT;
+  const storedTheme = localStorage.getItem(THEME_LOCAL_STORAGE_KEY) as Theme | null;
+  if (storedTheme) {
+    return storedTheme;
   }
-  // Mặc định là Light mode nếu chạy trên server
-  return Theme.LIGHT;
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  return prefersDark ? Theme.DARK : Theme.LIGHT;
 };
 
 export const ThemeContextProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(getThemeFromLocalStorage);
+  const [theme, setTheme] = useState<Theme | null>(null); // Ban đầu là null
 
-  const toggleTheme = () =>
-    setTheme((prevTheme) => (prevTheme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT));
+  const toggleTheme = () => {
+    if (theme) {
+      setTheme((prevTheme) => (prevTheme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT));
+    }
+  };
 
   useEffect(() => {
-    localStorage.setItem(THEME_LOCAL_STORAGE_KEY, theme);
-    // Thêm hoặc loại bỏ lớp 'dark' từ thẻ <html>
-    if (typeof window !== 'undefined') {
+    // Chỉ chạy trên client
+    const initialTheme = getThemeFromLocalStorage();
+    setTheme(initialTheme);
+  }, []);
+
+  useEffect(() => {
+    if (theme) {
+      localStorage.setItem(THEME_LOCAL_STORAGE_KEY, theme);
       const root = window.document.documentElement;
       if (theme === Theme.DARK) {
         root.classList.add('dark');
@@ -50,6 +52,11 @@ export const ThemeContextProvider: FC<{ children: React.ReactNode }> = ({ childr
       }
     }
   }, [theme]);
+
+  if (theme === null) {
+    // Render một trạng thái tạm thời hoặc loading cho đến khi theme được load
+    return null;
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
