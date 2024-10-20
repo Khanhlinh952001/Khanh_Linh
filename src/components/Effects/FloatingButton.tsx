@@ -106,14 +106,14 @@ const FloatingButton: React.FC = () => {
       )}
 
       {showChatbot && (
-        <div className="absolute bottom-16 right-0  bg-slate-600 rounded-lg shadow-lg p-4 w-80 border border-gray-300">
-          <h3 className="font-bold text-lg mb-2">Linh (Chatbot)</h3>
-          <div className="h-48 overflow-y-auto mb-2 p-2 border border-gray-200 rounded-lg">
+        <div className="absolute bottom-16 right-0 bg-slate-600 rounded-lg shadow-lg p-4 w-80 border border-gray-300 transition-transform transform hover:scale-105">
+          <h3 className="font-bold text-lg mb-2 text-white">Linh (Chatbot)</h3>
+          <div className="h-48 overflow-y-auto mb-2 p-2 border border-gray-200 rounded-lg bg-gray-800">
             {responses.map((response, index) => (
               <p
                 key={index}
-                className={`mb-2 ${
-                  response.startsWith("Bạn:") ? "text-right" : "text-left text-blue-500"
+                className={`mb-2 text-white ${
+                  response.startsWith("Bạn:") ? "text-right" : "text-left text-blue-400"
                 }`}
               >
                 {response}

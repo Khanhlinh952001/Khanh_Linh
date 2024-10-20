@@ -1,7 +1,15 @@
 {
   "Header": {
-    "about": "About",
+    "about": "About me",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "hire": "Hire me",
+    "skills": "Skills"
+  },
+  "Banner": {
+    "hi": "Hi, I am Linh",
+    "fullStack": "I am a Full Stack!",
+    "design": "I am a Designer",
+    "mobile": "I am a Mobile Developer"
   }
 }

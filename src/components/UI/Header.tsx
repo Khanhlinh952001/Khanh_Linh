@@ -1,43 +1,53 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ThemeToggle from "../Effects/ThemeToggle";
 import LanguageSwitcher from "../Effects/LanguageSwitcher";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
-// import AnimatedItem from '../Effects/AnimatedItem';
-// Định nghĩa HeaderPage
+
 export const HeaderPage: React.FC = () => {
   const t = useTranslations("Header");
   return (
-    <nav className="flex  container justify-around pt-6 text-gray-600 dark:text-gray-100">
-      <div className="flex cursor-pointer">
+    <nav className="flex container mt-3 mx-auto px-4 md:px-8 lg:px-16 justify-between items-center pt-6 text-gray-600 dark:text-gray-200">
+
+      <div className="flex items-center cursor-pointer">
         <img
-        style={{ width: "40px", height: "40px" }}
-        src="/images/avatar.svg"
-        className="w-3 h-3"
-        alt="Dark Logo"
-      />
-      <h1 className="mt-2 ml-2 font-bold">
-        LINH CODER
-      </h1>
+          src="/images/avatar.svg"
+          className="w-10 h-10"  // Tailwind class cho kích thước 40x40px
+          alt="Dark Logo"
+        />
+        <h1 className="ml-3 font-bold text-lg">
+          LINH CODER
+        </h1>
       </div>
       
-      <div className="flex pt-3 space-x-6">
-         <Link href={"#"} className="text-lg ">
-           {t('projects')}
-         </Link>
-         <Link href={"#"} className="text-lg ">
-           {t('about')}
-         </Link>
-         <Link href={"#"} className="text-lg ">
-           {t('contact')}
-         </Link>
+      <div className="flex space-x-8">
+        <Link href={"#"} className="text-lg">
+          {t('projects')}
+        </Link>
+        <Link href={"#"} className="text-lg">
+          {t('about')}
+        </Link>
+        <Link href={"#"} className="text-lg">
+          {t('skills')}
+        </Link>
+        <Link href={"#"} className="text-lg">
+          {t('contact')}
+        </Link>
       </div>
-      <div className="flex space-x-2 ">
-      <ThemeToggle />
-      <LanguageSwitcher />  
+
+      <div className="flex space-x-2 items-center">
+      <div className="hidden md:flex">
+						<span
+							// onClick={showHireMeModal}
+							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+							aria-label="Hire Me Button"
+						>
+							<button >{t('hire')}</button>
+						</span>
+					</div>
+        <ThemeToggle />
+        <LanguageSwitcher />
       </div>
-      
     </nav>
   );
 };

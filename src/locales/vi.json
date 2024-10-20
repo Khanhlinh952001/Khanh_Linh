@@ -1,7 +1,15 @@
 {
   "Header": {
-    "about": "Giới thiệu",
+    "about": "Về tôi",
     "projects": "Dự án",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "hire": "Thuê tôi",
+    "skills": "Kỹ năng"
+  },
+  "Banner": {
+    "hi": "Xin chào, tôi là Linh",
+    "fullStack": "Tôi là lập trình viên Full Stack!",
+    "design": "Tôi là nhà thiết kế",
+    "mobile": "Tôi là lập trình viên di động"
   }
 }
