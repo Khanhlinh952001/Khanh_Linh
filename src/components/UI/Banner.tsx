@@ -57,8 +57,24 @@ export const Banner: React.FC = () => {
           transition={{ ease: "easeInOut", duration: 0.9, delay: 0.8 }}
           className="w-6/12 sm:w-2/3 text-right float-right mt-8 sm:mt-0"
         >
-          <Image src="/images/developer.svg" alt="Developer" width={500} height={300} />
-          <Image src="/images/developer-dark.svg" alt="Developer" width={500} height={300} />
+          <Image
+            src="/images/developer.svg"
+            alt="Developer"
+            width={500}
+            height={300}
+            layout="responsive"
+            objectFit="contain"
+            className="block dark:hidden"
+          />
+          <Image
+            src="/images/developer-dark.svg"
+            alt="Developer"
+            width={500}
+            height={300}
+            layout="responsive"
+            objectFit="contain"
+            className="hidden dark:block"
+          />
         </motion.div>
       </motion.section>
       {/* Additional section for projects portfolio can be added here */}

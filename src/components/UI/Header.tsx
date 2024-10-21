@@ -14,8 +14,8 @@ export const HeaderPage: React.FC = () => {
         <Image
           src="/images/avatar.svg"
           alt="Dark Logo"
-          width={500}
-          height={300}
+          width={40}
+          height={40}
         />
         <h1 className="ml-3 font-bold text-lg">
           LINH CODER

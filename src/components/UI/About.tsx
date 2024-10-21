@@ -31,7 +31,7 @@ export const AboutPage = () => {
            {t('bio')}
           </p>
           <div className="mt-6 w-full flex justify-center">
-              <FaSlideshare className='text-2xl'/>
+              <FaSlideshare className='text-2xl dark:text-ternary-light'/>
           </div>
         </motion.div>
       </div>
