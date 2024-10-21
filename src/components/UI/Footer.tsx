@@ -1,9 +1,5 @@
 import {
 	FiGithub,
-	FiTwitter,
-	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
 	FiFacebook
 } from 'react-icons/fi';
 

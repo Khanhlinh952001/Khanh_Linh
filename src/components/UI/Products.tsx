@@ -3,6 +3,8 @@ import { IoSearch } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { FaAngleRight } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
+import Image from 'next/image';
+
 export const Products: React.FC = () => {
     const t = useTranslations('Projects')
     return (
@@ -49,7 +51,7 @@ export const Products: React.FC = () => {
 
                     <div className="max-w-sm dark:bg-[#293041] border border-gray-200 rounded-lg shadow  dark:border-gray-700">
                         <a href="#">
-                            <img className="rounded-t-lg p-4 rounded" src="https://ewm.swiss/application/files/4016/0396/6469/World_Wide_Web_EWM_Web_Design_Agency_.jpg" alt="" />
+                            <Image src="https://ewm.swiss/application/files/4016/0396/6469/World_Wide_Web_EWM_Web_Design_Agency_.jpg" alt="" width={500} height={300} />
                         </a>
                         <div className="p-5">
                             <a href="#">

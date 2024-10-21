@@ -4,6 +4,7 @@ import Typical from "react-typical";
 import { motion } from "framer-motion";
 import { FiArrowDownCircle } from "react-icons/fi";
 import { useTranslations } from "next-intl";
+import Image from 'next/image';
 
 export const Banner: React.FC = () => {
   const t = useTranslations('Banner')
@@ -56,8 +57,8 @@ export const Banner: React.FC = () => {
           transition={{ ease: "easeInOut", duration: 0.9, delay: 0.8 }}
           className="w-6/12 sm:w-2/3 text-right float-right mt-8 sm:mt-0"
         >
-          <img src="/images/developer.svg" alt="Developer" className="dark:hidden" />
-          <img src="/images/developer-dark.svg" alt="Developer" className="hidden dark:block" />
+          <Image src="/images/developer.svg" alt="Developer" width={500} height={300} />
+          <Image src="/images/developer-dark.svg" alt="Developer" width={500} height={300} />
         </motion.div>
       </motion.section>
       {/* Additional section for projects portfolio can be added here */}

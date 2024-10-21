@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { FaSlideshare } from "react-icons/fa6";
+import Image from 'next/image';
+
 export const AboutPage = () => {
     const t = useTranslations('Info')
   return (
@@ -13,9 +15,11 @@ export const AboutPage = () => {
     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ ease: "easeInOut", duration: 0.9, delay: 0.1 }} className="w-full sm:w-1/4 mb-7 sm:mb-0">
-          <img
+          <Image
             src="/images/avt.jpg"
             alt="Your Name"
+            width={500}
+            height={300}
             className="rounded-lg w-96"
           />
         </motion.div>

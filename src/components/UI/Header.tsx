@@ -3,16 +3,19 @@ import ThemeToggle from "../Effects/ThemeToggle";
 import LanguageSwitcher from "../Effects/LanguageSwitcher";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+
 export const HeaderPage: React.FC = () => {
   const t = useTranslations("Header");
   return (
     <nav className="flex container mt-3 mx-auto px-4 md:px-8 lg:px-16 justify-between items-center pt-6 text-gray-600 dark:text-gray-200">
 
       <div className="flex items-center cursor-pointer">
-        <img
+        <Image
           src="/images/avatar.svg"
-          className="w-10 h-10"  // Tailwind class cho kích thước 40x40px
           alt="Dark Logo"
+          width={500}
+          height={300}
         />
         <h1 className="ml-3 font-bold text-lg">
           LINH CODER

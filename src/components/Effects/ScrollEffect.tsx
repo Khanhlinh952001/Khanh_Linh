@@ -6,6 +6,7 @@ const ScrollEffect: React.FC<{ children: React.ReactNode }> = ({ children }) => 
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    const currentRef = ref.current; // Copy ref.current to a variable
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -15,13 +16,13 @@ const ScrollEffect: React.FC<{ children: React.ReactNode }> = ({ children }) => 
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
