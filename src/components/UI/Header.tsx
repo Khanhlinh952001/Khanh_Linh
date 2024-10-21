@@ -3,7 +3,6 @@ import ThemeToggle from "../Effects/ThemeToggle";
 import LanguageSwitcher from "../Effects/LanguageSwitcher";
 import Link from "next/link";
 import { useTranslations } from 'next-intl';
-
 export const HeaderPage: React.FC = () => {
   const t = useTranslations("Header");
   return (

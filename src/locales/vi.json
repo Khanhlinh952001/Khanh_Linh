@@ -11,5 +11,17 @@
     "fullStack": "Tôi là lập trình viên Full Stack!",
     "design": "Tôi là nhà thiết kế",
     "mobile": "Tôi là lập trình viên di động"
+  },
+  "Projects": {
+    "projects": "Danh mục dự án",
+    "search": "Tìm kiếm",
+    "searchPlaceholder": "Tìm kiếm dự án theo tiêu đề hoặc lọc theo danh mục",
+    "All": "Tất cả",
+    "Mobile": "Di động",
+    "Web": "Web",
+    "Design": "Thiết kế"
+  },
+  "Info": {
+    "bio": "Tôi là một lập trình viên Full-Stack đầy nhiệt huyết với hơn 5 năm kinh nghiệm trong việc tạo ra các ứng dụng web động và thân thiện với người dùng. Chuyên môn của tôi nằm ở các framework JavaScript như React và Node.js, cùng với nền tảng vững chắc trong cả phát triển frontend và backend. Tôi tự hào về khả năng giải quyết các vấn đề phức tạp và xây dựng các giải pháp hiệu quả thúc đẩy thành công kinh doanh. Hành trình của tôi trong lĩnh vực công nghệ bắt đầu với niềm đam mê lập trình, và đã phát triển thành sự nghiệp mà tôi liên tục phấn đấu để học hỏi và trưởng thành. Tôi phát triển mạnh mẽ trong môi trường hợp tác và thích làm việc trên các dự án thách thức tôi và mở rộng ranh giới công nghệ. Khi không lập trình, tôi thường đọc về các xu hướng công nghệ mới nhất hoặc khám phá các ngôn ngữ lập trình mới. Hiện tại, tôi đang tìm kiếm cơ hội để đóng góp vào các dự án sáng tạo và trở thành một phần của đội ngũ coi trọng sự sáng tạo và xuất sắc về mặt kỹ thuật. Mục tiêu của tôi là tận dụng kỹ năng của mình để xây dựng các ứng dụng có tác động và tạo ra sự khác biệt trong cuộc sống của mọi người."
   }
 }

@@ -2350,6 +2350,11 @@ react-motion@^0.5.2:
     prop-types "^15.5.8"
     raf "^3.1.0"
 
+react-skillbars@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-skillbars/-/react-skillbars-2.2.0.tgz#e355353aaefc42690ba32eec78afa409f4b074e6"
+  integrity sha512-MzCILQkdUotSCtTpUK6KPFj41ng9rmkQULEIqlTb2FE7omAekEA27qP18bbP/qnjyuA+fdGXqA3LaPBCJoXKKA==
+
 react-text-loop@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-text-loop/-/react-text-loop-2.3.0.tgz#c4035b1f3fb8216b34ed93f3160025fc7b1af3b7"

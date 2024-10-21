@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaTiktok } from "react-icons/fa";
 import Link from "next/link";
 import removeAccents from "remove-accents"; // Thư viện chuyển đổi không dấu
 
@@ -101,6 +101,14 @@ const FloatingButton: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FaInstagram />
+          </Link>
+          <Link
+            href="https://tiktok.com"
+            className="bg-black text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTiktok />
           </Link>
         </div>
       )}
