@@ -21,12 +21,12 @@ export const Banner: React.FC = () => {
         initial={{ opacity: 0, y: 180 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="font-semibold text-2xl lg:text-3xl xl:text-4xl text-center text-ternary-dark dark:text-gray-200 "
+        className="font-semibold text-2xl lg:text-3xl xl:text-4xl text- text-ternary-dark dark:text-gray-200 "
       >
         {t('hi')}
-        <h1 className="font-semibold text-2xl lg:text-2xl xl:text-3xl text-left ml-4 text-ternary-dark dark:text-gray-200">
+        <h1 className="font-semibold text-2xl lg:text-2xl xl:text-3xl text-center ml-4 text-ternary-dark dark:text-gray-200">
           <Typical
-            steps={[t('fullStack'), 3000, t('design'), 3000, t('mobile'), 3000]}
+            steps={[t('fullStack'), 5000, t('design'), 5000, t('mobile'), 5000]}
             loop={Infinity}
             wrapper="span"
           />
