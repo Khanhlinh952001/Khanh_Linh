@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaTiktok,FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import removeAccents from "remove-accents"; // Thư viện chuyển đổi không dấu
 
@@ -70,6 +70,14 @@ const FloatingButton: React.FC = () => {
 
       {isOpen && (
         <div className="absolute bottom-16 right-0 flex flex-col items-end space-y-2">
+        <Link
+            href="https://facebook.com"
+            className="bg-gray-800 text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            < FaGithub/>
+          </Link>
           <Link
             href="https://facebook.com"
             className="bg-blue-600 text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110"

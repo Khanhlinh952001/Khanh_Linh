@@ -15,42 +15,39 @@ export const Banner: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="flex flex-col  sm:justify-between items-center sm:flex-row mt-12 md:mt-2 "
+        className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
+      ><div className="md:w-1/3 text-center">
+      <motion.h1
+        initial={{ opacity: 0, y: 180 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
+        className="font-semibold text-2xl lg:text-3xl xl:text-4xl text-center text-ternary-dark dark:text-gray-200 "
       >
-        <div className="w-full md:w-1/3 text-left">
-          <motion.h1
-          initial={{ opacity: 0, y: 180 }}
-          animate={{ opacity: 1, y: 0 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.9,
-              delay: 0.2,
-            }}
-            className=" font-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-gray-200 uppercase"
-          >
-           {t('hi')}
-          
-          <h1 className=" font-semibold text-2xl lg:text-2xl xl:text-3xl text-center sm:text-left  text-ternary-dark dark:text-gray-200">
-            <Typical
-              steps={[(t('fullStack')), 3000, t('design'), 3000, t('mobile'), 3000]}
-              loop={Infinity}
-              wrapper="span"
-            />
-          </h1>
-         
-            <a
-              download="/CV-KhanhLinh.pdf"
-              href="/CV-KhanhLinh.pdf"
-              className=" font-medium flex justify-center items-center w-36 sm:w-48 mt-8 mb-6 sm:mb-0  border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500 "
-              aria-label="Download CV"
-            >
-              <FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100" />
-              <span className="text-sm sm:text-sm font-general-medium duration-100">
-                Download CV
-              </span>
-            </a>
-            </motion.h1>
+        {t('hi')}
+        <h1 className="font-semibold text-2xl lg:text-2xl xl:text-3xl text-left ml-4 text-ternary-dark dark:text-gray-200">
+          <Typical
+            steps={[t('fullStack'), 3000, t('design'), 3000, t('mobile'), 3000]}
+            loop={Infinity}
+            wrapper="span"
+          />
+        </h1>
+        <div className="flex justify-center">
+           <a
+          download="/CV-KhanhLinh.pdf"
+          href="/CV-KhanhLinh.pdf"
+          className="font-medium flex justify-center items-center w-36 sm:w-48 mt-8 mb-6 sm:mb-0 border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+          aria-label="Download CV"
+        >
+          <FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sm:w-6 sm:h-6 duration-100" />
+          <span className="text-sm sm:text-sm font-general-medium duration-100">
+            Download CV
+          </span>
+        </a>
         </div>
+       
+      </motion.h1>
+    </div>
+    
         <motion.div
           initial={{ opacity: 0, y: 180 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +57,7 @@ export const Banner: React.FC = () => {
           <Image
             src="/images/developer.svg"
             alt="Developer"
-            width={500}
+            width={400}
             height={300}
             layout="responsive"
             objectFit="contain"
@@ -69,7 +66,7 @@ export const Banner: React.FC = () => {
           <Image
             src="/images/developer-dark.svg"
             alt="Developer"
-            width={500}
+            width={400}
             height={300}
             layout="responsive"
             objectFit="contain"

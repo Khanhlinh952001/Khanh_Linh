@@ -9,13 +9,13 @@ import { AboutPage } from '@/components/UI/About';
 const Home: React.FC = () => {
   return (
     <div className='text-black'>
-      <div className='h-screen'>
+      <div className=''>
         <ScrollEffect>
           <HeaderPage />
           <Banner />
         </ScrollEffect>
       </div>
-      <div className="h-screen">
+      <div className="">
         <ScrollEffect>
           <AboutPage />
         </ScrollEffect>
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
 
 
 
-      <div className="h-screen">
+      <div className="">
         <ScrollEffect>
           <Products />
         </ScrollEffect>

@@ -10,7 +10,7 @@ export const AboutPage = () => {
     <div
       className="container mx-auto items-center"
     >
-      <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+      <div className="block sm:justify-center sm:flex sm:gap-10 mt-10 sm:mt-20">
         <motion.div
     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
