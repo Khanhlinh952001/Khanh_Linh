@@ -36,12 +36,12 @@ const ScrollToTopButton: React.FC = () => {
           behavior: 'smooth',
         });
       }}
-      className={`fixed bottom-20 right-5 p-2 bg-blue-500 text-white rounded-full shadow-md transition-opacity duration-300 ${
+      className={`fixed bottom-20 right-5 p-2  text-gray-800 dark:text-white rounded-full shadow-md transition-opacity duration-300 ${
         visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       aria-label="Scroll to top"
     >
-      {mounted && <GoMoveToTop className="text-2xl" />} {/* Chỉ render icon khi component đã mount */}
+      {mounted && <GoMoveToTop className="text-2xl " />} {/* Chỉ render icon khi component đã mount */}
     </button>
   );
 };

@@ -4,7 +4,8 @@
     "projects": "Projects",
     "contact": "Contact",
     "hire": "Hire me",
-    "skills": "Skills"
+    "skills": "Skills",
+    "knowledge": "Knowledge"
   },
   "Banner": {
     "hi": "Hi, I am Linh",
@@ -18,10 +19,27 @@
     "searchPlaceholder": "Search projects by title or filter by category",
     "All": "All",
     "Mobile": "Mobile",
-    "Web": "Web",
-    "Design": "Design"
+    "Website": "Web",
+    "Design": "Design",
+    "readMore":" Read more"
   },
   "Info":{
     "bio":"I'm a passionate Full-Stack Software Developer with over 5 years of experience in creating dynamic and user-friendly web applications. My expertise lies in JavaScript frameworks like React and Node.js, along with a strong background in both frontend and backend development. I take pride in solving complex problems and building efficient solutions that drive business success.My journey in tech started with a fascination for coding, which evolved into a career where I continuously strive to learn and grow. I thrive in collaborative environments and enjoy working on projects that challenge me and push the boundaries of technology. When I’m not coding, I’m either reading up on the latest tech trends or exploring new programming languages.Currently, I’m looking for opportunities to contribute to innovative projects and be part of a team that values creativity and technical excellence. My goal is to leverage my skills to build impactful applications that make a difference in people’s lives.."
+  },
+  "Contact":{
+    "title": "Contact",
+    "message": "Thank you for exploring my work! I'm excited to connect with you. Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.",
+    "email": "vokhanhlinhdeveloper@gmail.com",
+    "phone": "+82 10 2500 0935",
+    "name": "Vo Khanh Linh",
+    "location": "Hau Giang, Viet Nam"
+  },
+  "Detail":{
+    "Platforms":"Platforms",
+    "Features":"Key Features",
+    "Technologies" :"Technologies Used",
+    "Responsibility":"My Responsibility"
+
   }
+
 }
