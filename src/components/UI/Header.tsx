@@ -24,7 +24,7 @@ export const HeaderPage: React.FC = () => {
   };
 
   return (
-    <nav className="flex container dark:bg-[#0d2539] pb-4 opacity-2  bg-white mx-auto px-4 md:px-8 lg:px-16 justify-between items-center pt-6 text-gray-600 dark:text-gray-200">
+    <nav className="flex container   pb-2    mx-auto px-4 md:px-8 lg:px-16 justify-between items-center pt-4 text-gray-600 dark:text-gray-200">
       {/* Logo */}
       <div data-aos="fade-right" data-aos-duration="500" className="flex items-center cursor-pointer">
         <Image

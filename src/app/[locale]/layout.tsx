@@ -6,6 +6,7 @@ import FloatingButton from "@/components/Effects/FloatingButton";
 import { NextIntlClientProvider } from 'next-intl';
 import Head from 'next/head';
 import 'aos/dist/aos.css';
+import Cursor from '@/components/Effects/Cursor';
 import localFont from 'next/font/local'
 export const generateMetadata = async ({ params: { locale } }: { params: { locale: string } }) => ({
   title: `KhanhLinh_Profile - ${locale}`,
@@ -35,6 +36,7 @@ export default async function LocaleLayout({
       <body className="bg-white dark:bg-[#0d2438] text-gray-700 dark:text-gray-100">
         <NextIntlClientProvider messages={messages}>
           <ThemeContextProvider>
+            <Cursor/>
             {children}
             <ScrollToTopButton />
             <FloatingButton />

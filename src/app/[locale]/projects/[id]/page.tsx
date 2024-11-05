@@ -10,11 +10,12 @@ import Footer from "@/components/UI/Footer";
 import { projects } from '@/data/projects/project';
 import { useTranslations } from "next-intl";
 import VanillaTilt from 'vanilla-tilt';
+
 const Detail: React.FC = () => {
     const params = useParams();
     const id = params?.id;
-    const locale = params?.locale as "en" | "vi"; // Chỉ định kiểu để hạn chế lỗi
-    const t = useTranslations('Detail')
+    const locale = params?.locale as "en" | "vi";
+    const t = useTranslations('Detail');
 
     useEffect(() => {
         AOS.init({ duration: 700 });
@@ -22,7 +23,7 @@ const Detail: React.FC = () => {
     useEffect(() => {
         const tiltElements = document.querySelectorAll<HTMLElement>('.tilt');
         tiltElements.forEach((el) => {
-            if (el instanceof HTMLElement) { // Type guard to ensure el is HTMLElement
+            if (el instanceof HTMLElement) {
                 VanillaTilt.init(el, {
                     max: 25,
                     speed: 200,
@@ -32,19 +33,18 @@ const Detail: React.FC = () => {
             }
         });
     }, []);
-    const projectData = projects.find((project) => project.id === id);
 
+    const projectData = projects.find((project) => project.id === id);
     if (!projectData) {
         return <p>Dự án không tồn tại.</p>;
     }
 
-    const projectLocaleData = projectData[locale]; // Chọn dữ liệu dựa trên locale
+    const projectLocaleData = projectData[locale];
 
     return (
         <div>
             <HeaderPage />
-            <div className="container mx-auto max-w-7xl">
-                {/* Ảnh chính của dự án */}
+            <div className="container mx-auto max-w-7xl px-4 md:px-8">
                 <div className="w-full object-cover rounded-3xl border border-gray-100 dark:border-gray-900 shadow-2xl shadow-gray-600/10 mt-10 tilt">
                     <Image
                         data-aos="fade-up"
@@ -58,38 +58,34 @@ const Detail: React.FC = () => {
                     />
                 </div>
 
-                {/* Chi tiết dự án */}
                 <div className="mt-8 dark:text-white text-gray-800">
-                    <h1 data-aos="fade-right" className="text-5xl font-bold">{projectLocaleData.name}</h1>
-                    <p data-aos="fade-right" className="mt-4">{projectLocaleData.description}</p>
+                    <h1 data-aos="fade-right" className="text-3xl md:text-5xl font-bold">{projectLocaleData.name}</h1>
+                    <p data-aos="fade-right" className="mt-4 text-sm md:text-base">{projectLocaleData.description}</p>
 
-                    <div className="flex mt-6">
-                        {/* Thông tin bên trái */}
-                        <div className="w-3/12 p-6 rounded-lg dark:text-white">
-                            <h2 data-aos="fade-right" className="text-2xl font-semibold mb-2">{t('Platforms')}</h2>
-                            <p data-aos="fade-right" className="mb-4">{projectLocaleData.platforms}</p>
+                    <div className="flex flex-col md:flex-row mt-6">
+                        <div className="md:w-3/12 w-full p-4 md:p-6 rounded-lg dark:text-white">
+                            <h2 data-aos="fade-right" className="text-xl md:text-2xl font-semibold mb-2">{t('Platforms')}</h2>
+                            <p data-aos="fade-right" className="mb-4 text-sm md:text-base">{projectLocaleData.platforms}</p>
 
-                            <h2 data-aos="fade-right" className="text-2xl font-semibold mb-2">{t('Features')} </h2>
-                            <ul className="mb-4 list-disc list-inside space-y-1">
+                            <h2 data-aos="fade-right" className="text-xl md:text-2xl font-semibold mb-2">{t('Features')}</h2>
+                            <ul className="mb-4 list-disc list-inside space-y-1 text-sm md:text-base">
                                 {projectLocaleData.keyFeatures.map((feature, index) => (
                                     <li key={index} data-aos="fade-right">{feature}</li>
                                 ))}
                             </ul>
 
-                            <h2 data-aos="fade-right" className="text-2xl font-medium mb-2">{t('Technologies')}  </h2>
-                            <ul className="mb-4 list-disc list-inside space-y-1">
+                            <h2 data-aos="fade-right" className="text-xl md:text-2xl font-medium mb-2">{t('Technologies')}</h2>
+                            <ul className="mb-4 list-disc list-inside space-y-1 text-sm md:text-base">
                                 {projectLocaleData.technologies.map((tech, index) => (
                                     <li key={index} data-aos="fade-right">{tech}</li>
                                 ))}
                             </ul>
 
-                            <h2 data-aos="fade-right" className="text-2xl font-semibold mb-2">{t('Responsibility')} </h2>
-                            <p data-aos="fade-right">{projectLocaleData.responsibilities}</p>
+                            <h2 data-aos="fade-right" className="text-xl md:text-2xl font-semibold mb-2">{t('Responsibility')}</h2>
+                            <p data-aos="fade-right" className="text-sm md:text-base">{projectLocaleData.responsibilities}</p>
                         </div>
 
-                        {/* Hình ảnh bên phải */}
-                        <div className="w-full">
-                            {/* Ảnh lớn */}
+                        <div className="md:w-9/12 w-full">
                             <div className="grid grid-cols-1 gap-4 mt-10">
                                 {projectLocaleData.bigImages.length > 0 ? (
                                     projectLocaleData.bigImages.map((image, index) => (
@@ -110,8 +106,7 @@ const Detail: React.FC = () => {
                                 )}
                             </div>
 
-                            {/* Ảnh nhỏ */}
-                            <div className="w-full  grid grid-cols-3 gap-4 mt-6">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
                                 {projectLocaleData.smallImages.length > 0 ? (
                                     projectLocaleData.smallImages.map((image, index) => (
                                         <div key={index} data-aos="fade-left" className="rounded-xl border border-gray-100 dark:border-gray-900 shadow-xl shadow-gray-600/10">

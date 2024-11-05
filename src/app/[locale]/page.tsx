@@ -34,7 +34,7 @@ const Home: React.FC = () => {
   }, []);
   return (
     <div className="text-black">
-      <div className="fixed flex container mb-20 z-20  mx-auto px-4 md:px-8 lg:px-16 justify-between items-center text-gray-600 top-0 dark:text-gray-200">
+      <div className="fixed flex w-full  z-20  px-4 md:px-8 lg:dark:bg-[#0d2539] lg:bg-white justify-between items-center text-gray-600 top-0 dark:text-gray-200">
       <HeaderPage />
       </div>
          
