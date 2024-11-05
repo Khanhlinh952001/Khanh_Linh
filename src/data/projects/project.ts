@@ -172,7 +172,367 @@ export const projects: Project[] = [
             ],
             responsibilities: "UI/UX_BE_FE"
         }
+    },
+    {
+        id: "3",
+        vi: {
+            name: "Website Mua Sắm",
+            description: "GLOBIMART - Nền tảng mua sắm trực tuyến hiện đại, mang đến trải nghiệm mua sắm dễ dàng và tiện lợi.",
+            platforms: "Website",
+            keyFeatures: [
+                "Giao diện thân thiện và dễ sử dụng",
+                "Tích hợp thanh toán trực tuyến",
+                "Quản lý giỏ hàng tiện lợi"
+            ],
+            image: { img: '/thumbnails/GLOBIMART.png', alt: "Thumbnail của GLOBIMART" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART.png", alt: "Màn hình chính của ứng dụng" },
+                { img: "/thumbnails/Globimart/4.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/Globimart/5.png", alt: "Màn hình giỏ hàng" },
+                { img: "/thumbnails/Globimart/6.png", alt: "Màn hình thanh toán" },
+                { img: "/thumbnails/Globimart/7.png", alt: "Màn hình tài khoản người dùng" }
+            ],
+            smallImages: [
+                // { img: "/thumbnails/Korea/4.png", alt: "Màn hình ứng dụng trên thiết bị di động" }
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
+        },
+        en: {
+            name: "Shopping Website",
+            description: "GLOBIMART - A modern online shopping platform that provides a seamless and convenient shopping experience.",
+            platforms: "Website",
+            keyFeatures: [
+                "User-friendly and easy-to-navigate interface",
+                "Integrated online payment",
+                "Convenient shopping cart management"
+            ],
+            image: { img: '/thumbnails/GLOBIMART.png', alt: "GLOBIMART Thumbnail" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/Globimart/4.png", alt: "Product screen" },
+                { img: "/thumbnails/Globimart/5.png", alt: "Cart screen" },
+                { img: "/thumbnails/Globimart/6.png", alt: "Checkout screen" },
+                { img: "/thumbnails/Globimart/7.png", alt: "User account screen" }
+            ],
+            smallImages: [
+                // { img: "/thumbnails/Korea/4.png", alt: "Mobile app screen" }
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development"
+        },
+        kr: {
+            name: "쇼핑 웹사이트",
+            description: "GLOBIMART - 매끄럽고 편리한 쇼핑 경험을 제공하는 현대적인 온라인 쇼핑 플랫폼입니다.",
+            platforms: "웹사이트",
+            keyFeatures: [
+                "사용자 친화적이고 탐색하기 쉬운 인터페이스",
+                "온라인 결제 통합",
+                "편리한 장바구니 관리"
+            ],
+            image: { img: '/thumbnails/GLOBIMART.png', alt: "GLOBIMART 썸네일" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART.png", alt: "앱의 홈 화면" },
+                { img: "/thumbnails/Globimart/4.png", alt: "제품 화면" },
+                { img: "/thumbnails/Globimart/5.png", alt: "장바구니 화면" },
+                { img: "/thumbnails/Globimart/6.png", alt: "결제 화면" },
+                { img: "/thumbnails/Globimart/7.png", alt: "사용자 계정 화면" }
+            ],
+            smallImages: [
+                // { img: "/thumbnails/Korea/4.png", alt: "모바일 앱 화면" }
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
+        }
+    },
+    {
+        id: "4",
+        vi: {
+            name: "Doash",
+            description: "Doash - Nền tảng quản lý đơn hàng và phân tích dữ liệu, giúp người dùng dễ dàng theo dõi và tối ưu hóa quy trình mua sắm.",
+            platforms: "Website",
+            keyFeatures: [
+                "Quản lý đơn hàng hiệu quả",
+                "Phân tích dữ liệu chi tiết",
+                "Giao diện thân thiện với người dùng"
+            ],
+            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Thumbnail của Doash" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Màn hình chính của ứng dụng Doash" },
+                { img: "/thumbnails/Globimart/1.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/Globimart/2.png", alt: "Màn hình giỏ hàng" },
+                { img: "/thumbnails/Globimart/3.png", alt: "Màn hình thanh toán" },
+            ],
+            smallImages: [
+                // Có thể thêm hình ảnh nhỏ nếu cần
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
+        },
+        en: {
+            name: "Doash",
+            description: "Doash - An order management and data analytics platform that enables users to efficiently track and optimize their shopping processes.",
+            platforms: "Website",
+            keyFeatures: [
+                "Efficient order management",
+                "Detailed data analytics",
+                "User-friendly interface"
+            ],
+            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Thumbnail of Doash" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Main screen of the Doash application" },
+                { img: "/thumbnails/Globimart/1.png", alt: "Product screen" },
+                { img: "/thumbnails/Globimart/2.png", alt: "Cart screen" },
+                { img: "/thumbnails/Globimart/3.png", alt: "Checkout screen" },
+            ],
+            smallImages: [
+                // Can add small images if needed
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development"
+        },
+        kr: {
+            name: "도시",
+            description: "Doash - 주문 관리 및 데이터 분석 플랫폼으로, 사용자가 쇼핑 프로세스를 효율적으로 추적하고 최적화할 수 있도록 도와줍니다.",
+            platforms: "웹사이트",
+            keyFeatures: [
+                "효율적인 주문 관리",
+                "상세한 데이터 분석",
+                "사용자 친화적인 인터페이스"
+            ],
+            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Doash 썸네일" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Doash 애플리케이션의 메인 화면" },
+                { img: "/thumbnails/Globimart/1.png", alt: "제품 화면" },
+                { img: "/thumbnails/Globimart/2.png", alt: "장바구니 화면" },
+                { img: "/thumbnails/Globimart/3.png", alt: "결제 화면" },
+            ],
+            smallImages: [
+                // 필요한 경우 작은 이미지를 추가할 수 있습니다.
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
+        }
     }
+,    
+    {
+        id: "5",
+        vi: {
+            name: "Shop_VGO",
+            description: "Shop_VGO - Ứng dụng mua sắm di động mang đến trải nghiệm mua sắm tiện lợi và nhanh chóng với giao diện thân thiện và tính năng đa dạng.",
+            platforms: "Di động",
+            keyFeatures: [
+                "Giao diện người dùng thân thiện",
+                "Quản lý sản phẩm hiệu quả",
+                "Giỏ hàng thông minh",
+                "Thông báo giảm giá và khuyến mãi"
+            ],
+            image: { img: '/thumbnails/SHOP_VGO.png', alt: "Thumbnail của Shop_VGO" },
+            technologies: [
+                "React Native",
+                "Firebase",
+                "Tailwind CSS",
+                "MUI"
+            ],
+            bigImages: [
+                { img: "/thumbnails/SHOP_VGO.png", alt: "Màn hình chính của ứng dụng Shop_VGO" },
+            ],
+            smallImages: [
+                { img: "/thumbnails/vgoShop/1.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/2.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/3.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/4.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/5.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/6.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/7.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/8.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/9.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/vgoShop/10.png", alt: "Màn hình sản phẩm" },
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
+        },
+        en: {
+            name: "Shop_VGO",
+            description: "Shop_VGO - A mobile shopping application that offers a convenient and fast shopping experience with a user-friendly interface and a variety of features.",
+            platforms: "Mobile",
+            keyFeatures: [
+                "User-friendly interface",
+                "Efficient product management",
+                "Smart shopping cart",
+                "Discount and promotion notifications"
+            ],
+            image: { img: '/thumbnails/SHOP_VGO.png', alt: "Thumbnail of Shop_VGO" },
+            technologies: [
+                "React Native",
+                "Firebase",
+                "Tailwind CSS",
+                "MUI"
+            ],
+            bigImages: [
+                { img: "/thumbnails/SHOP_VGO.png", alt: "Main screen of the Shop_VGO application" },
+            ],
+            smallImages: [
+                { img: "/thumbnails/vgoShop/1.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/2.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/3.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/4.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/5.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/6.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/7.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/8.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/9.png", alt: "Product screen" },
+                { img: "/thumbnails/vgoShop/10.png", alt: "Product screen" },
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development"
+        },
+        kr: {
+            name: "Shop_VGO",
+            description: "Shop_VGO - 사용자 친화적인 인터페이스와 다양한 기능을 제공하는 모바일 쇼핑 애플리케이션으로 편리하고 빠른 쇼핑 경험을 제공합니다.",
+            platforms: "모바일",
+            keyFeatures: [
+                "사용자 친화적인 인터페이스",
+                "효율적인 제품 관리",
+                "스마트 장바구니",
+                "할인 및 프로모션 알림"
+            ],
+            image: { img: '/thumbnails/SHOP_VGO.png', alt: "Shop_VGO 썸네일" },
+            technologies: [
+                "React Native",
+                "Firebase",
+                "Tailwind CSS",
+                "MUI"
+            ],
+            bigImages: [
+                { img: "/thumbnails/SHOP_VGO.png", alt: "Shop_VGO 애플리케이션의 메인 화면" },
+            ],
+            smallImages: [
+                { img: "/thumbnails/vgoShop/1.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/2.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/3.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/4.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/5.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/6.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/7.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/8.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/9.png", alt: "제품 화면" },
+                { img: "/thumbnails/vgoShop/10.png", alt: "제품 화면" },
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
+        }
+    },
+    {
+        id: "6",
+        vi: {
+            name: "Deliverry",
+            description: "Deliverry - Ứng dụng giao hàng tiện lợi, giúp người dùng đặt hàng và theo dõi tình trạng giao hàng dễ dàng chỉ với vài cú chạm.",
+            platforms: "Di động",
+            keyFeatures: [
+                "Đặt hàng nhanh chóng và dễ dàng",
+                "Theo dõi tình trạng đơn hàng theo thời gian thực",
+                "Thông báo giao hàng tức thì",
+                "Giao diện người dùng trực quan và thân thiện"
+            ],
+            image: { img: '/thumbnails/DELIVERY_VGO.png', alt: "Thumbnail của Deliverry" },
+            technologies: [
+                "React Native",
+                "Firebase",
+                "Tailwind CSS",
+                "MUI"
+            ],
+            bigImages: [
+                { img: "/thumbnails/DELIVERY_VGO.png", alt: "Màn hình chính của ứng dụng Deliverry" },
+            ],
+            smallImages: [
+                { img: "/thumbnails/delivery/1.png", alt: "Màn hình đặt hàng" },
+                { img: "/thumbnails/delivery/2.png", alt: "Màn hình theo dõi đơn hàng" },
+                { img: "/thumbnails/delivery/3.png", alt: "Màn hình thông báo giao hàng" },
+                { img: "/thumbnails/delivery/4.png", alt: "Giao diện người dùng" },
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
+        },
+        en: {
+            name: "Deliverry",
+            description: "Deliverry - A convenient delivery application that allows users to order and track their shipments easily with just a few taps.",
+            platforms: "Mobile",
+            keyFeatures: [
+                "Quick and easy order placement",
+                "Real-time order tracking",
+                "Instant delivery notifications",
+                "User-friendly and intuitive interface"
+            ],
+            image: { img: '/thumbnails/DELIVERY_VGO.png', alt: "Thumbnail of Deliverry" },
+            technologies: [
+                "React Native",
+                "Firebase",
+                "Tailwind CSS",
+                "MUI"
+            ],
+            bigImages: [
+                { img: "/thumbnails/DELIVERY_VGO.png", alt: "Main screen of the Deliverry application" },
+            ],
+            smallImages: [
+                { img: "/thumbnails/delivery/1.png", alt: "Order screen" },
+                { img: "/thumbnails/delivery/2.png", alt: "Order tracking screen" },
+                { img: "/thumbnails/delivery/3.png", alt: "Delivery notification screen" },
+                { img: "/thumbnails/delivery/4.png", alt: "User interface" },
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development"
+        },
+        kr: {
+            name: "Deliverry",
+            description: "Deliverry - 사용자들이 손쉽게 주문하고 배송 상태를 실시간으로 추적할 수 있는 편리한 배송 애플리케이션입니다.",
+            platforms: "모바일",
+            keyFeatures: [
+                "빠르고 쉬운 주문",
+                "실시간 주문 추적",
+                "즉각적인 배송 알림",
+                "사용자 친화적이고 직관적인 인터페이스"
+            ],
+            image: { img: '/thumbnails/DELIVERY_VGO.png', alt: "Deliverry 썸네일" },
+            technologies: [
+                "React Native",
+                "Firebase",
+                "Tailwind CSS",
+                "MUI"
+            ],
+            bigImages: [
+                { img: "/thumbnails/DELIVERY_VGO.png", alt: "Deliverry 애플리케이션의 메인 화면" },
+            ],
+            smallImages: [
+                { img: "/thumbnails/delivery/1.png", alt: "주문 화면" },
+                { img: "/thumbnails/delivery/2.png", alt: "주문 추적 화면" },
+                { img: "/thumbnails/delivery/3.png", alt: "배송 알림 화면" },
+                { img: "/thumbnails/delivery/4.png", alt: "사용자 인터페이스" },
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
+        }
+    }
+    
+    
     
     // Thêm các dự án khác tại đây nếu cần
 ];

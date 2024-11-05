@@ -62,7 +62,7 @@ export const SkillsSection = () => {
   }, []);
 
   return (
-    <div className='container mx-auto text-gray-700 dark:text-white'>
+    <div className='container mx-auto pt-24 text-gray-700 dark:text-white'>
       <motion.div
         className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
         initial={{ opacity: 0, y: 30 }}
@@ -82,7 +82,7 @@ export const SkillsSection = () => {
                 <TiltComponent key={skill.type} options={{ scale: 1.1, speed: 400 }}>
                    <div data-aos="fade-up" data-aos-duration="500"  className='flex '>
                 {getIcon(skill.type)} {/* Thay đổi hàm này để lấy icon tương ứng */}
-                <p className=" ml-2 mt-1 text-gray-800 text-lg">{skill.type}</p></div>
+                <p className=" ml-2 mt-1 text-gray-800 dark:text-gray-300 text-lg">{skill.type}</p></div>
               </TiltComponent>
               
               

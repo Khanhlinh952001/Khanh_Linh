@@ -1,72 +1,62 @@
 "use client";
 import React from "react";
-import Typical from "react-typical";
-import { FiArrowDownCircle } from "react-icons/fi";
+// import Typical from "react-typical";
 import { useTranslations } from "next-intl";
-import Image from 'next/image';
+// import Image from 'next/image';
+import CountUp from "react-countup";
+import ComputersCanvas from "./ComputersCanvas";
 export const Banner: React.FC = () => {
-  const t = useTranslations('Banner')
+  const t = useTranslations('Info')
 
   return (
     <div className="max-w-7xl mx-auto">
-      <div
-        className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
-      >
-        <div data-aos="fade-up" data-aos-duration="500" className="md:w-1/3 text-center">
-          <h1
+     
+     <div className="w-full  h-[600px]">
+  <ComputersCanvas />
+</div>
 
-            className="font-semibold text-2xl lg:text-3xl xl:text-4xl text- text-ternary-dark dark:text-gray-200 "
-          >
-            {t('hi')}
-            <h1 className="font-semibold text-2xl lg:text-2xl xl:text-3xl text-center ml-4 text-ternary-dark dark:text-gray-200">
-              <Typical
-                steps={[t('fullStack'), 5000, t('design'), 5000, t('mobile'), 5000]}
-                loop={Infinity}
-                wrapper="span"
-              />
-            </h1>
-            <div className="flex justify-center">
-              <a
-                download="/CV-KhanhLinh.pdf"
-                href="/CV-KhanhLinh.pdf"
-                className="font-medium flex justify-center items-center w-36 sm:w-48 mt-8 mb-6 sm:mb-0 border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
-                aria-label="Download CV"
-              >
-                <FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sm:w-6 sm:h-6 duration-100" />
-                <span className="text-sm sm:text-sm font-general-medium duration-100">
-                  Download CV
-                </span>
-              </a>
-            </div>
-
-          </h1>
-        </div>
-
+      {/* Additional section for projects portfolio can be added here */}
+      <div className="mt-10 lg:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm py-10">
         <div
-          data-aos="fade-up" data-aos-duration="500"
-          className="w-6/12 sm:w-2/3 text-right float-right mt-8 sm:mt-0"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          className="flex flex-wrap justify-center gap-10 container mx-auto font-general-medium"
         >
-          <Image
-            src="/images/developer.svg"
-            alt="Developer"
-            width={400}
-            height={300}
-            layout="responsive"
-            objectFit="contain"
-            className="block dark:hidden"
-          />
-          <Image
-            src="/images/developer-dark.svg"
-            alt="Developer"
-            width={400}
-            height={300}
-            layout="responsive"
-            objectFit="contain"
-            className="hidden dark:block"
-          />
+          <StatItem value={5} label={t('year')} />
+          <StatItem value="8k+" label={t('github')}  />
+          <StatItem value="92%" label={t('feedback')}  />
+          <StatItem value="89%" label={t('completed')}  />
         </div>
       </div>
-      {/* Additional section for projects portfolio can be added here */}
     </div>
   );
 };
+
+
+
+const StatItem = ({
+  value,
+  label,
+}: {
+  value: string | number;
+  label: string;
+}) => (
+  <div className="text-center">
+    <h2 className="text-4xl text-secondary-dark dark:text-secondary-light mb-2">
+      <CountUp
+        end={typeof value === "string" ? parseFloat(value) : value}
+        duration={2}
+        separator=","
+        suffix={
+          typeof value === "string" &&
+          isNaN(parseFloat(value[value.length - 1]))
+            ? value.slice(-1)
+            : ""
+        }
+      />
+    </h2>
+    <span className="font-general-regular block text-md text-ternary-dark dark:text-ternary-light">
+      {label}
+    </span>
+  </div>
+);

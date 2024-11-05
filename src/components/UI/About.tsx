@@ -1,71 +1,58 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useTranslations } from "next-intl";
-import { FaSlideshare } from "react-icons/fa6";
-import Image from "next/image";
-import CountUp from 'react-countup';
+// import { FaSlideshare } from "react-icons/fa6";
+import { FiArrowDownCircle } from "react-icons/fi";
+
 export const AboutPage = () => {
   const t = useTranslations("Info");
 
   return (
-    <div className="container mx-auto items-center">
-      <div className="sm:block md:block lg:flex sm:gap-10 mt-10 sm:mt-20">
-        <div
-          data-aos="fade-up" data-aos-duration="500"
-          className="w-full md:w-full sm:w-1/4 mb-7 sm:mb-0 flex justify-center"
-        >
-          <Image
-            src="/images/avt.jpg"
-            alt="Your Name"
-            width={500}
-            height={300}
-            className="rounded-lg w-96"
-          />
-        </div>
-        <div
-            data-aos="fade-up" data-aos-duration="500"
-          className="font-general-regular w-full md:w-full sm:w-3/4 text-justify flex flex-col justify-center"
+    <div className="container mx-auto pt-24">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 py-12">
+      {/* Hình ảnh và chữ nền */}
+      <div className="relative flex-1 flex justify-center">
+        <img
+          data-aos="fade-up"
+          src="/images/avt.png"
+          alt="art cover"
+          className="w-full max-w-[512px] z-10"
+          loading="lazy"
+        />
+        <h2 className="absolute inset-0 z-0 text-[60px] font-bold opacity-30 text-gray-300 dark:text-black">Senior Software Developer <br/>Product Designer</h2>
+      </div>
 
-        >
-          <p className="mb-4 text-ternary-dark p-4 dark:text-ternary-light text-lg">
-            {t("bio")}
-          </p>
-          <div className="mt-6 w-full flex justify-center">
-            <FaSlideshare className="text-2xl dark:text-ternary-light" />
-          </div>
-        </div>
-      </div>
+      {/* Phần giới thiệu */}
       <div
-      
-        className="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm"
+        data-aos="fade-up"
+        className="flex-1 flex flex-col gap-4 "
       >
-        <div  data-aos="fade-up" data-aos-duration="500"  className="font-general-medium container mx-auto py-20 justify-center space-x-4 flex items-center">
-          <StatItem value={5} label="Years of experience" />
-          <StatItem value="8k+" label="Stars on GitHub" />
-          <StatItem value="92%" label="Positive feedback" />
-          <StatItem value="89%" label="Projects completed" />
-        </div>
+        <h3 className="text-3xl text-black dark:text-white">{t('hi')} </h3>
+        <h3 className="text-5xl font-bold text-black dark:text-white">
+          {t('name')}
+        </h3>
+        <p className="mt-4 text-xl  font-light text-gray-800 dark:text-gray-100">
+         {t('bio')}
+        </p>
+        <div className="flex justify-center">
+              <a
+                download="/CV-KhanhLinh.pdf"
+                href="/CV-KhanhLinh.pdf"
+                className="font-medium flex justify-center items-center w-36 sm:w-48 mt-8 mb-6 sm:mb-0 border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+                aria-label="Download CV"
+              >
+                <FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sm:w-6 sm:h-6 duration-100" />
+                <span className="text-sm sm:text-sm font-general-medium duration-100">
+                  Download CV
+                </span>
+              </a>
+            </div>
       </div>
+    </div>
+
+     
     </div>
   );
 };
-const StatItem = ({
-  value,
-  label,
-}: {
-  value: string | number;
-  label: string;
-}) => (
-  <div className="mb-20 sm:mb-0 text-center">
-    <h2 className="text-4xl text-secondary-dark dark:text-secondary-light mb-2">
-      <CountUp
-        end={typeof value === 'string' ? parseFloat(value) : value}
-        duration={2} // thời gian đếm, có thể tùy chỉnh
-        separator="," // dấu phân cách hàng nghìn
-        suffix={typeof value === 'string' && isNaN(parseFloat(value[value.length - 1])) ? value.slice(-1) : ''}
-      />
-    </h2>
-    <span className="font-general-regular block text-md text-ternary-dark dark:text-ternary-light">
-      {label}
-    </span>
-  </div>
-);
+
+

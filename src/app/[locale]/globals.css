@@ -24,18 +24,9 @@ body {
   margin: 0;
 }
 
-.icon-container {
-  perspective: 1000px; /* Enables 3D perspective */
+.perspective {
+  perspective: 1000px;
 }
-
-.icon {
-  transition: transform 0.3s ease; /* Smooth transition */
-}
-
-.icon:hover {
-  transform: rotateY(15deg) rotateX(15deg) scale(1.1); /* 3D rotation and scaling */
-}
-
 
 
 

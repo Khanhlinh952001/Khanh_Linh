@@ -32,7 +32,7 @@ export const Products: React.FC = () => {
     );
 
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto pt-24">
             <section className="py-5 sm:py-10 mt-5 sm:mt-10">
                 <div data-aos="fade-up" data-aos-duration="500" className="text-center">
                     <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-gray-200">

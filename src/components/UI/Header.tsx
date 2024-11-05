@@ -24,7 +24,7 @@ export const HeaderPage: React.FC = () => {
   };
 
   return (
-    <nav className="flex container mt-3 mx-auto px-4 md:px-8 lg:px-16 justify-between items-center pt-6 text-gray-600 dark:text-gray-200">
+    <nav className="flex container dark:bg-[#0d2539] pb-4 opacity-2  bg-white mx-auto px-4 md:px-8 lg:px-16 justify-between items-center pt-6 text-gray-600 dark:text-gray-200">
       {/* Logo */}
       <div data-aos="fade-right" data-aos-duration="500" className="flex items-center cursor-pointer">
         <Image
@@ -38,10 +38,10 @@ export const HeaderPage: React.FC = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-6" data-aos="fade-down" data-aos-duration="500">
-        <Link href={"/#projects"} className="text-lg md:text-md sm:mt-1" onClick={() => scrollToSection('projects')}>{t("projects")}</Link>
         <Link href={"/#about"} className="text-lg md:text-md sm:mt-1" onClick={() => scrollToSection('about')}>{t("about")}</Link>
+        <Link href={"/#projects"} className="text-lg md:text-md sm:mt-1" onClick={() => scrollToSection('projects')}>{t("projects")}</Link>
         <Link href={"/#skills"} className="text-lg md:text-md sm:mt-1" onClick={() => scrollToSection('skills')}>{t("skills")}</Link>
-        <Link href={"#Contact"} className="text-lg md:text-md sm:mt-1" onClick={() => scrollToSection('Contact')}>{t("contact")}</Link>
+        <Link href={"/#Contact"} className="text-lg md:text-md sm:mt-1" onClick={() => scrollToSection('Contact')}>{t("contact")}</Link>
         
       </div>
 
@@ -66,13 +66,13 @@ export const HeaderPage: React.FC = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full mt-8 bg-gray-50 z-10 dark:bg-gray-800 flex flex-col items-center space-y-3 py-4 md:hidden">
-          <Link href={"#"} className="text-lg" onClick={() => scrollToSection('projects')}>{t("projects")}</Link>
-          <Link href={"#"} className="text-lg" onClick={() => scrollToSection('about')}>{t("about")}</Link>
-          <Link href={"#"} className="text-lg" onClick={() => scrollToSection('skills')}>{t("skills")}</Link>
-          <Link href={"#Contact"} className="text-lg" onClick={() => scrollToSection('Contact')}>{t("contact")}</Link>
+          <Link href={"/#about"} className="text-lg" onClick={() => scrollToSection('about')}>{t("about")}</Link>
+          <Link href={"/#projects"} className="text-lg" onClick={() => scrollToSection('projects')}>{t("projects")}</Link>
+          <Link href={"/#skills"} className="text-lg" onClick={() => scrollToSection('skills')}>{t("skills")}</Link>
+          <Link href={"/#Contact"} className="text-lg" onClick={() => scrollToSection('Contact')}>{t("contact")}</Link>
          
           <span className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2 duration-300" aria-label="Hire Me Button">
-            <button>{t("hire")}</button>
+           <Link href={"#"}> <button>{t("hire")}</button></Link> 
           </span>
         </div>
       )}
