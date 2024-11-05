@@ -1,7 +1,6 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";

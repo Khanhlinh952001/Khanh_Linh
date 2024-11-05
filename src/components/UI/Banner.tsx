@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Typical from "react-typical";
-import { motion } from "framer-motion";
 import { FiArrowDownCircle } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 import Image from 'next/image';

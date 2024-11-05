@@ -2,6 +2,7 @@ import React, { useEffect, useRef, ReactNode } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 
 interface TiltComponentProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   options?: any; // Bạn có thể thay đổi kiểu này nếu biết chính xác cấu trúc của options
   children: ReactNode;
 }
@@ -17,6 +18,7 @@ const TiltComponent: React.FC<TiltComponentProps> = ({ options, children }) => {
     return () => {
       if (tiltRef.current) {
         // Type Assertion: cho TypeScript biết rằng tiltRef.current là một thể hiện của VanillaTilt
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (tiltRef.current as any).vanillaTilt.destroy();
       }
     };

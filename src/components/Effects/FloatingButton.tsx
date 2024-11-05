@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaTiktok, FaGithub } from "react-icons/fa";
+import { FaFacebook,  FaInstagram, FaTiktok, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import removeAccents from "remove-accents"; // Thư viện chuyển đổi không dấu
 

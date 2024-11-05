@@ -1,6 +1,5 @@
 "use client";
 import { IoSearch } from "react-icons/io5";
-import { motion } from "framer-motion";
 import { RiShareBoxLine } from "react-icons/ri";
 import { useTranslations } from "next-intl";
 import Image from "next/image";

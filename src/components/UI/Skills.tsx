@@ -7,7 +7,6 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaPython,
-  FaDatabase,
   FaGitAlt,
   FaDocker,
   FaFigma,

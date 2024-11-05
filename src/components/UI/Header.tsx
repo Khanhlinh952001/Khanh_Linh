@@ -6,12 +6,10 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
-import { useParams } from "next/navigation";
 
 export const HeaderPage: React.FC = () => {
   const t = useTranslations("Header");
   const [menuOpen, setMenuOpen] = useState(false);
-  const locale = useParams();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 

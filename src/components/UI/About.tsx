@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { FaSlideshare } from "react-icons/fa6";
 import Image from "next/image";
