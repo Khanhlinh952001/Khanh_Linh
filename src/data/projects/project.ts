@@ -109,12 +109,12 @@ export const projects: Project[] = [
             ],
             bigImages: [
                 { img: "/thumbnails/KOREA.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/Korea/1.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/Korea/2.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/Korea/3.png", alt: "Home screen of the app" }
+                { img: "/thumbnails/korea/1.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/2.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/3.png", alt: "Home screen of the app" }
             ],
             smallImages: [
-                { img: "/thumbnails/Korea/4.png", alt: "Home screen of the app" }
+                { img: "/thumbnails/korea/4.png", alt: "Home screen of the app" }
             ],
             responsibilities: "UI/UX_BE_FE"
         },
