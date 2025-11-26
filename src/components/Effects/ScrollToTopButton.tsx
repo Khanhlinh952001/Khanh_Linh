@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import { GoMoveToTop } from "react-icons/go";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const ScrollToTopButton: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
@@ -19,10 +19,10 @@ const ScrollToTopButton: React.FC = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -33,15 +33,24 @@ const ScrollToTopButton: React.FC = () => {
       onClick={() => {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       }}
-      className={`fixed bottom-20 right-5 p-2  text-gray-800 dark:text-white rounded-full shadow-md transition-opacity duration-300 ${
-        visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      className={`fixed bottom-20 right-5 rounded-full shadow-md overflow-hidden transition-opacity duration-300 bg-transparent ${
+        visible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       aria-label="Scroll to top"
     >
-      {mounted && <GoMoveToTop className="text-2xl " />} {/* Chỉ render icon khi component đã mount */}
+      {mounted && (
+        <Image
+          src="/images/up.gif"
+          alt="Scroll to top"
+          width={36}
+          height={36}
+          className="rounded-full object-contain"
+          priority
+        />
+      )}
     </button>
   );
 };

@@ -530,6 +530,330 @@ export const projects: Project[] = [
             ],
             responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
         }
+    },
+    {
+        id: "7",
+        en: {
+            name: "Treatments - Child Therapy Management System",
+            description: "A web and mobile application that helps parents systematically track and manage their child's therapy journey. Parents can manage child profiles, monitor medical and therapy schedules, record prescribed medications and side effects, track developmental and behavioral evaluations, securely store medical records, and the mobile app is published on Google Play.",
+            platforms: "Website and Mobile",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.seoul.treatments",
+            keyFeatures: [
+                "Child profile management",
+                "Medical and therapy schedule tracking",
+                "Prescription management and side-effect logging",
+                "Development and behavior assessments",
+                "Secure medical record storage"
+            ],
+            image: { img: "/thumbnails/treatments/treatments.png", alt: "Treatments project thumbnail" },
+            technologies: [
+                "Laravel 12",
+                "PHP 8.2",
+                "React 18",
+                "Inertia.js",
+                "Tailwind CSS",
+                "Flutter",
+                "MySQL 8.0",
+                "Docker",
+                "Docker Compose"
+            ],
+            bigImages: [
+                { img: "/thumbnails/treatments/treatments.png", alt: "Main dashboard of the Treatments system" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/treatments/1.png", alt: "Child profile screen" },
+                { img: "/thumbnails/treatments/2.png", alt: "Therapy schedule screen" },
+                { img: "/thumbnails/treatments/3.png", alt: "Medication management screen" },
+                { img: "/thumbnails/treatments/4.png", alt: "Development assessment view" },
+                { img: "/thumbnails/treatments/5.png", alt: "Behavior tracking view" },
+                { img: "/thumbnails/treatments/6.png", alt: "Medical records storage screen" },
+                { img: "/thumbnails/treatments/7.png", alt: "Mobile interface of Treatments app" }
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development, Flutter mobile application (Google Play)"
+        },
+        kr: {
+            name: "Treatments - 아동 치료 관리 시스템",
+            description: "부모님이 자녀의 치료 과정을 한 곳에서 체계적으로 추적하고 관리할 수 있는 웹 · 모바일 애플리케이션입니다. 자녀 프로필을 관리하고 진료 및 치료 일정을 추적하며, 처방약과 부작용을 기록하고, 발달 및 행동 평가 결과와 의료 기록을 안전하게 보관할 수 있으며, 모바일 앱은 Google Play에 배포되었습니다.",
+            platforms: "웹사이트 및 모바일",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.seoul.treatments",
+            keyFeatures: [
+                "자녀 프로필 관리",
+                "진료 및 치료 일정 추적",
+                "처방약 관리 및 부작용 기록",
+                "발달 및 행동 평가",
+                "의료 기록 저장"
+            ],
+            image: { img: "/thumbnails/treatments/treatments.png", alt: "Treatments 프로젝트 썸네일" },
+            technologies: [
+                "Laravel 12",
+                "PHP 8.2",
+                "React 18",
+                "Inertia.js",
+                "Tailwind CSS",
+                "Flutter",
+                "MySQL 8.0",
+                "Docker",
+                "Docker Compose"
+            ],
+            bigImages: [
+                { img: "/thumbnails/treatments/treatments.png", alt: "Treatments 시스템 메인 대시보드" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/treatments/1.png", alt: "자녀 프로필 화면" },
+                { img: "/thumbnails/treatments/2.png", alt: "진료 및 치료 일정 화면" },
+                { img: "/thumbnails/treatments/3.png", alt: "처방약 관리 화면" },
+                { img: "/thumbnails/treatments/4.png", alt: "발달 평가 화면" },
+                { img: "/thumbnails/treatments/5.png", alt: "행동 평가 화면" },
+                { img: "/thumbnails/treatments/6.png", alt: "의료 기록 저장 화면" },
+                { img: "/thumbnails/treatments/7.png", alt: "Treatments 모바일 화면" }
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발, Flutter 모바일 애플리케이션 (Google Play)"
+        },
+        vi: {
+            name: "Treatments - Hệ thống quản lý trị liệu cho trẻ em",
+            description: "Ứng dụng web và mobile giúp phụ huynh theo dõi và quản lý toàn bộ quá trình trị liệu của con một cách hệ thống. Phụ huynh có thể quản lý hồ sơ của trẻ, theo dõi lịch khám và trị liệu, quản lý thuốc và ghi nhận tác dụng phụ, lưu lại các đánh giá về phát triển và hành vi, lưu trữ an toàn hồ sơ y tế quan trọng và ứng dụng mobile đã được phát hành trên Google Play.",
+            platforms: "Website và Mobile",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.seoul.treatments",
+            keyFeatures: [
+                "Quản lý hồ sơ trẻ",
+                "Theo dõi lịch khám và trị liệu",
+                "Quản lý thuốc và ghi nhận tác dụng phụ",
+                "Đánh giá phát triển và hành vi",
+                "Lưu trữ hồ sơ y tế"
+            ],
+            image: { img: "/thumbnails/treatments/treatments.png", alt: "Thumbnail dự án Treatments" },
+            technologies: [
+                "Laravel 12",
+                "PHP 8.2",
+                "React 18",
+                "Inertia.js",
+                "Tailwind CSS",
+                "Flutter",
+                "MySQL 8.0",
+                "Docker",
+                "Docker Compose"
+            ],
+            bigImages: [
+                { img: "/thumbnails/treatments/treatments.png", alt: "Màn hình dashboard chính của hệ thống Treatments" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/treatments/1.png", alt: "Màn hình hồ sơ trẻ" },
+                { img: "/thumbnails/treatments/2.png", alt: "Màn hình lịch khám và trị liệu" },
+                { img: "/thumbnails/treatments/3.png", alt: "Màn hình quản lý thuốc" },
+                { img: "/thumbnails/treatments/4.png", alt: "Màn hình đánh giá phát triển" },
+                { img: "/thumbnails/treatments/5.png", alt: "Màn hình đánh giá hành vi" },
+                { img: "/thumbnails/treatments/6.png", alt: "Màn hình lưu trữ hồ sơ y tế" },
+                { img: "/thumbnails/treatments/7.png", alt: "Giao diện ứng dụng Treatments trên mobile" }
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend, Phát triển ứng dụng mobile bằng Flutter (Google Play)"
+        }
+    },
+    {
+        id: "8",
+        en: {
+            name: "Panic Disorder Management App",
+            description: "A CBT (Cognitive Behavioral Therapy) based panic disorder support application that helps users understand and relieve panic symptoms. Users can keep an emotion diary and panic diary, practice relaxation and exposure training, learn from educational content, and track their recovery progress over time.",
+            platforms: "Mobile",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.seoul.panic_app",
+            keyFeatures: [
+                "Emotion diary & panic diary",
+                "Relaxation training & exposure training",
+                "Educational content for understanding panic",
+                "User progress tracking and management"
+            ],
+            image: { img: "/thumbnails/panic/panic.png", alt: "Panic disorder management app thumbnail" },
+            technologies: [
+                "Mobile app",
+                "CBT-based therapeutic content"
+            ],
+            bigImages: [
+                { img: "/thumbnails/panic/panic.png", alt: "Main screens of the panic management app" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/panic/1.png", alt: "Emotion diary screen" },
+                { img: "/thumbnails/panic/2.png", alt: "Panic diary screen" },
+                { img: "/thumbnails/panic/3.png", alt: "Relaxation training screen" },
+                { img: "/thumbnails/panic/4.png", alt: "Exposure training screen" },
+                { img: "/thumbnails/panic/5.png", alt: "Progress tracking screen" }
+            ],
+            responsibilities: "UI/UX design, mobile app design and implementation"
+        },
+        kr: {
+            name: "공황장애 관리 애플리케이션",
+            description: "CBT(인지행동치료)를 기반으로 공황 증상을 이해하고 완화할 수 있도록 돕는 공황장애 치료 지원 앱입니다. 감정일기와 공황일기를 기록하고, 이완훈련과 노출훈련을 진행하며, 교육 콘텐츠를 통해 공황에 대한 이해를 높이고 회복 과정을 체계적으로 관리할 수 있습니다.",
+            platforms: "모바일",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.seoul.panic_app",
+            keyFeatures: [
+                "감정일기 & 공황일기",
+                "이완훈련 & 노출훈련",
+                "공황 관련 교육 콘텐츠",
+                "사용자 진행상황 관리"
+            ],
+            image: { img: "/thumbnails/panic/panic.png", alt: "공황장애 관리 앱 썸네일" },
+            technologies: [
+                "모바일 앱",
+                "CBT 기반 치료 콘텐츠"
+            ],
+            bigImages: [
+                { img: "/thumbnails/panic/panic.png", alt: "공황장애 관리 앱 주요 화면" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/panic/1.png", alt: "감정일기 화면" },
+                { img: "/thumbnails/panic/2.png", alt: "공황일기 화면" },
+                { img: "/thumbnails/panic/3.png", alt: "이완훈련 화면" },
+                { img: "/thumbnails/panic/4.png", alt: "노출훈련 화면" },
+                { img: "/thumbnails/panic/5.png", alt: "진행상황 관리 화면" }
+            ],
+            responsibilities: "UI/UX 디자인, 모바일 앱 기획 및 구현"
+        },
+        vi: {
+            name: "Ứng dụng quản lý rối loạn hoảng sợ",
+            description: "Ứng dụng hỗ trợ điều trị rối loạn hoảng sợ dựa trên CBT (Liệu pháp nhận thức hành vi), giúp người dùng hiểu và giảm nhẹ các triệu chứng hoảng sợ. Người dùng có thể ghi nhật ký cảm xúc và nhật ký hoảng sợ, thực hành các bài tập thư giãn và phơi nhiễm, học qua nội dung giáo dục và theo dõi tiến trình hồi phục của mình.",
+            platforms: "Mobile",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.seoul.panic_app",
+            keyFeatures: [
+                "Nhật ký cảm xúc & nhật ký hoảng sợ",
+                "Bài tập thư giãn & phơi nhiễm",
+                "Nội dung giáo dục về rối loạn hoảng sợ",
+                "Quản lý và theo dõi tiến trình người dùng"
+            ],
+            image: { img: "/thumbnails/panic/panic.png", alt: "Thumbnail ứng dụng quản lý rối loạn hoảng sợ" },
+            technologies: [
+                "Ứng dụng mobile",
+                "Nội dung trị liệu dựa trên CBT"
+            ],
+            bigImages: [
+                { img: "/thumbnails/panic/panic.png", alt: "Các màn hình chính của ứng dụng quản lý rối loạn hoảng sợ" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/panic/1.png", alt: "Màn hình nhật ký cảm xúc" },
+                { img: "/thumbnails/panic/2.png", alt: "Màn hình nhật ký hoảng sợ" },
+                { img: "/thumbnails/panic/3.png", alt: "Màn hình bài tập thư giãn" },
+                { img: "/thumbnails/panic/4.png", alt: "Màn hình bài tập phơi nhiễm" },
+                { img: "/thumbnails/panic/5.png", alt: "Màn hình quản lý tiến trình" }
+            ],
+            responsibilities: "Thiết kế UI/UX, thiết kế và triển khai ứng dụng mobile"
+        }
+    },
+    {
+        id: "9",
+        en: {
+            name: "Cup Point",
+            description: "A mobile application that lets users discover, share, and explore eco-friendly cafés and shops. It provides community features for events, partners, and market posts, rich review tools with visual highlight points on photos, receipt management, and a personalized My Page for managing and sharing reviews.",
+            platforms: "Mobile",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.soucean.cuppoint",
+            appStoreLink: "https://apps.apple.com/us/app/%EC%BB%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8/id6754556136",
+            keyFeatures: [
+                "Authentication & account management (email/password login, signup, logout, password & email recovery, Kakao login integration)",
+                "Community feeds for events, partners, and market with list/detail, create, edit, delete, pagination and pull-to-refresh",
+                "Shop-specific community feeds filtered by shop_id",
+                "Cup Note & review management with tags, form-based input and visual highlight markers on photos",
+                "Invoice management with upload from camera/gallery and upload status tracking",
+                "My Page with card-style swipe review browsing, full-screen review view and shareable images",
+                "Deep link navigation directly to specific reviews and auto-refresh on tab change",
+                "Profile & store info management including avatar upload, password change, business/store data and status",
+                "System features: GoRouter navigation with app/deep links, Naver Maps init and error handling, app version check & upgrade prompts, .env-based logging and configuration, light/dark theme and multi-language (ko/en) support"
+            ],
+            image: { img: "/thumbnails/cup_point/cup_point.png", alt: "Cup Point app hero image" },
+            technologies: [
+                "Flutter",
+                "Dart",
+                "GoRouter",
+                "Naver Maps",
+                "share_plus",
+                "upgrader",
+                "App links & deep links",
+                "Light/Dark theme",
+                "i18n (ko/en)"
+            ],
+            bigImages: [
+                { img: "/thumbnails/cup_point/cup_point.png", alt: "Cup Point app main screen and store badges" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/cup_point/1.png", alt: "Cup Point login screen" },
+                { img: "/thumbnails/cup_point/3.png", alt: "Cup Point review and cup note interface" },
+                { img: "/thumbnails/cup_point/4.png", alt: "Cup Point community and receipt management" }
+            ],
+            responsibilities: "UI/UX design, Flutter mobile app development, integration of community, review, receipt and infrastructure features"
+        },
+        kr: {
+            name: "컵 포인트",
+            description: "친환경 매장과 카페를 함께 만들고, 공유하고, 탐험할 수 있는 모바일 애플리케이션입니다. 회원 인증, 커뮤니티, 리뷰·컵 노트, 영수증 관리, 마이 페이지 등 다양한 기능을 제공하며, 사진 위에 공감 포인트를 표시하는 하이라이트 기능으로 리뷰 경험을 풍부하게 제공합니다.",
+            platforms: "모바일",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.soucean.cuppoint",
+            appStoreLink: "https://apps.apple.com/us/app/%EC%BB%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8/id6754556136",
+            keyFeatures: [
+                "회원 인증 & 계정 관리 (이메일/비밀번호 로그인, 회원가입, 로그아웃, 비밀번호 찾기, 이메일 찾기, 카카오 로그인 연동, 토큰 리프레시, 세션 복원)",
+                "커뮤니티(이벤트·파트너·마켓) 목록/상세 조회, 새 글 작성·수정·삭제, 페이징 및 당겨서 새로고침",
+                "shop_id 기반 특정 매장 전용 커뮤니티 피드 조회",
+                "컵 노트 & 리뷰 관리: 태그 선택, 폼 기반 입력, 사진 위 공감 포인트 하이라이트/마커 표시, 기존 하이라이트 복원 및 수정",
+                "영수증(Invoice) 관리: 목록/상세 조회, 카드형 요약, 카메라/갤러리 업로드, 업로드 상태·결과 확인 및 재시도",
+                "마이 페이지: 카드 스와이프 형태로 내 리뷰 보기·공유, 전체 화면 보기, 공유용 이미지 생성 및 share_plus로 공유",
+                "reviewId 딥링크로 특정 리뷰 바로 진입, 탭 이동 시 자동 새로고침",
+                "설정 및 프로필/매장 정보 관리, 비밀번호 변경, 회원 탈퇴, 비즈니스 상태 관리",
+                "GoRouter 기반 내비게이션 및 앱 링크/딥링크 처리, 네이버 지도 초기화 및 인증 오류 처리, 앱 버전 체크 및 업데이트 안내(upgrader + appcast), .env 기반 로깅/환경 설정, 라이트/다크 테마 및 다국어(ko/en) 지원"
+            ],
+            image: { img: "/thumbnails/cup_point/cup_point.png", alt: "컵 포인트 앱 메인 이미지" },
+            technologies: [
+                "Flutter",
+                "Dart",
+                "GoRouter",
+                "Naver 지도",
+                "share_plus",
+                "upgrader",
+                "앱 링크 & 딥링크",
+                "라이트/다크 테마",
+                "다국어 지원 (ko/en)"
+            ],
+            bigImages: [
+                { img: "/thumbnails/cup_point/cup_point.png", alt: "컵 포인트 앱 메인 화면과 스토어 배지" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/cup_point/1.png", alt: "컵 포인트 로그인 화면" },
+                { img: "/thumbnails/cup_point/3.png", alt: "컵 포인트 리뷰·컵 노트 인터페이스" },
+                { img: "/thumbnails/cup_point/4.png", alt: "컵 포인트 커뮤니티 및 영수증 관리 화면" }
+            ],
+            responsibilities: "UI/UX 디자인, Flutter 모바일 앱 개발, 커뮤니티·리뷰·영수증·인프라 기능 구현"
+        },
+        vi: {
+            name: "Cup Point",
+            description: "Ứng dụng mobile giúp người dùng khám phá, chia sẻ và trải nghiệm các quán cà phê/mãi eco thân thiện môi trường. Ứng dụng cung cấp cộng đồng sự kiện/đối tác/market, hệ thống review với điểm nhấn trực quan trên ảnh, quản lý hóa đơn và một trang My Page cá nhân để quản lý và chia sẻ đánh giá.",
+            platforms: "Mobile",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.soucean.cuppoint",
+            appStoreLink: "https://apps.apple.com/us/app/%EC%BB%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8/id6754556136",
+            keyFeatures: [
+                "Xác thực & quản lý tài khoản (đăng nhập email/mật khẩu, đăng ký, đăng xuất, tìm mật khẩu, tìm email, đăng nhập Kakao, refresh token, khôi phục session)",
+                "Cộng đồng (sự kiện, đối tác, market) với danh sách/chi tiết, tạo/sửa/xóa bài viết, phân trang và kéo để làm mới",
+                "Feed cộng đồng theo từng cửa hàng dựa trên shop_id",
+                "Cup Note & quản lý review: chọn tag, nhập form, đặt marker/hightlight điểm “cảm xúc” trên ảnh và khôi phục/chỉnh sửa highlight cũ",
+                "Quản lý hóa đơn (Invoice): xem danh sách/chi tiết, thẻ tóm tắt, upload từ camera/thư viện, theo dõi trạng thái và kết quả upload, hỗ trợ thử lại",
+                "My Page: xem và chia sẻ review theo dạng thẻ swipe, xem toàn màn hình, tạo ảnh chia sẻ và chia sẻ qua share_plus",
+                "Deep link (reviewId) để vào thẳng một review, tự cập nhật khi chuyển tab",
+                "Cài đặt & thông tin hồ sơ/cửa hàng, đổi mật khẩu, xóa tài khoản, quản lý trạng thái business",
+                "Hệ thống: điều hướng với GoRouter và app/deep link, khởi tạo & xử lý lỗi Naver Map, kiểm tra phiên bản và nhắc cập nhật (upgrader + appcast), cấu hình/log qua .env, hỗ trợ light/dark theme và đa ngôn ngữ (ko/en)"
+            ],
+            image: { img: "/thumbnails/cup_point/cup_point.png", alt: "Hình hero ứng dụng Cup Point" },
+            technologies: [
+                "Flutter",
+                "Dart",
+                "GoRouter",
+                "Naver Map",
+                "share_plus",
+                "upgrader",
+                "App links & deep links",
+                "Light/Dark theme",
+                "i18n (ko/en)"
+            ],
+            bigImages: [
+                { img: "/thumbnails/cup_point/cup_point.png", alt: "Màn hình chính và banner Cup Point" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/cup_point/1.png", alt: "Màn hình đăng nhập Cup Point" },
+                { img: "/thumbnails/cup_point/3.png", alt: "Giao diện review & Cup Note" },
+                { img: "/thumbnails/cup_point/4.png", alt: "Giao diện cộng đồng và quản lý hóa đơn" }
+            ],
+            responsibilities: "Thiết kế UI/UX, phát triển ứng dụng mobile Flutter, tích hợp cộng đồng, review, hóa đơn và hệ thống hạ tầng"
+        }
     }
     
     

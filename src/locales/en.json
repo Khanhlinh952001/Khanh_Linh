@@ -5,7 +5,9 @@
     "contact": "Contact",
     "hire": "Hire me",
     "skills": "Skills",
-    "knowledge": "Knowledge"
+    "knowledge": "Knowledge",
+    "skillsTitle": "Tech stack I use every day",
+    "skillsDescription": "Combining frontend, backend, mobile, and design tools to build complete products from idea to deployment."
   },
   "Info": {
     "hi": "Hello ✌, I am",
@@ -32,8 +34,13 @@
     "phone_bg":"phone",
     "email_bg":"email",
     "location_bg":"address",
-    "title": "Contact",
-    "message": "Thank you for exploring my work! I'm excited to connect with you. Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.",
+    "title": "Let's Connect",
+    "message": "I'm always interested in hearing about new projects and opportunities. Feel free to reach out through any of the channels below.",
+    "sub_message": "Whether you have a project in mind, want to collaborate, or just want to say hello, you can contact me easily via email, phone, or social media.",
+    "follow_me": "Follow Me",
+    "cta_title": "Ready to work together?",
+    "cta_message": "Don't hesitate to get in touch. I'm always open to discussing web development, creative projects, or opportunities to be part of your vision.",
+    "cta_button": "Start a Conversation",
     "email": "vokhanhlinhdeveloper@gmail.com",
     "phone": "+82 10 2500 0935",
     "name": "Vo Khanh Linh",
@@ -43,7 +50,9 @@
     "Platforms":"Platforms",
     "Features":"Key Features",
     "Technologies" :"Technologies Used",
-    "Responsibility":"My Responsibility"
+    "Responsibility":"My Responsibility",
+    "StoreLinkGooglePlay":"View on Google Play",
+    "StoreLinkAppStore":"View on App Store"
 
   }
 

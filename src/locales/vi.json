@@ -5,7 +5,9 @@
     "contact": "Liên hệ",
     "hire": "Thuê tôi",
     "skills": "Kỹ năng",
-    "knowledge": "Kiến thức"
+    "knowledge": "Kiến thức",
+    "skillsTitle": "Stack mình dùng hằng ngày",
+    "skillsDescription": "Kết hợp frontend, backend, mobile và công cụ thiết kế để xây dựng sản phẩm hoàn chỉnh từ ý tưởng đến triển khai."
   },
   "Info": {
     "hi": "Xin chào ✌, tôi là",
@@ -32,8 +34,13 @@
     "phone_bg":"Số điện thoại",
     "location_bg":"Địa chỉ",
     "email_bg":"Email",
-   "title": "Liên Hệ",
-   "message": "Cảm ơn bạn đã khám phá công việc của tôi! Tôi rất vui được kết nối với bạn. Nếu bạn có một dự án cần làm , muốn hợp tác, hoặc chỉ muốn chào hỏi, hãy thoải mái liên hệ.",
+   "title": "Kết nối với mình",
+   "message": "Mình luôn sẵn sàng lắng nghe về những dự án và cơ hội mới. Bạn có thể liên hệ qua bất kỳ kênh nào bên dưới.",
+   "sub_message": "Dù bạn có ý tưởng cho dự án, muốn hợp tác hay chỉ đơn giản là chào một tiếng, hãy liên hệ với mình qua email, số điện thoại hoặc mạng xã hội.",
+   "follow_me": "Theo dõi mình",
+   "cta_title": "Sẵn sàng làm việc cùng nhau chứ?",
+   "cta_message": "Đừng ngần ngại liên hệ. Mình luôn cởi mở để trò chuyện về web, sản phẩm số, hay bất kỳ cơ hội thú vị nào mà mình có thể đồng hành cùng bạn.",
+   "cta_button": "Bắt đầu trò chuyện",
    "email": "vokhanhlinhdeveloper@gmail.com",
    "phone": "+82 10 2500 0935",
    "name": "Võ Khánh Linh",
@@ -44,7 +51,9 @@
     "Platforms":"Nền tảng",
     "Features":"Tính năng chính",
     "Technologies" :"Công nghệ sử dụng",
-    "Responsibility":"Trách nhiệm của tôi"
+    "Responsibility":"Trách nhiệm của tôi",
+    "StoreLinkGooglePlay":"Xem trên Google Play",
+    "StoreLinkAppStore":"Xem trên App Store"
 
   }
 }

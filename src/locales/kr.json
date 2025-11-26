@@ -5,7 +5,9 @@
     "contact": "연락처",
     "hire": "고용하기",
     "skills": "기술",
-    "knowledge": "지식"
+    "knowledge": "지식",
+    "skillsTitle": "매일 사용하는 기술 스택",
+    "skillsDescription": "프론트엔드, 백엔드, 모바일, 디자인 도구를 결합하여 아이디어부터 배포까지 완성도 높은 제품을 만듭니다."
   },
   "Info": {
    "hi": "안녕 ✌, 저는",
@@ -27,12 +29,17 @@
   },
   
   "Contact":{
-   "title": "연락처",
    "name_bg":"이름",
     "phone_bg":"전화번호",
     "email_bg":"이메일",
     "location_bg":"주소",
-    "message": "제 작업을 탐색해 주셔서 감사합니다! 연결하게 되어 기쁩니다. 프로젝트에 대한 아이디어가 있거나 협업을 원하시거나 그냥 인사하고 싶으시면 언제든지 연락해 주세요.",
+    "title": "함께 이야기해요",
+    "message": "저는 언제나 새로운 프로젝트와 기회에 대해 듣는 것을 좋아합니다. 아래의 다양한 채널을 통해 편하게 연락 주세요.",
+    "sub_message": "프로젝트 아이디어가 있거나, 협업을 원하시거나, 그냥 인사만 나누고 싶으셔도 이메일, 전화, 혹은 SNS를 통해 쉽게 연락하실 수 있어요.",
+    "follow_me": "팔로우하기",
+    "cta_title": "함께 일해 볼까요?",
+    "cta_message": "주저하지 말고 연락 주세요. 웹 개발, 크리에이티브 프로젝트, 혹은 함께할 수 있는 어떤 기회든 항상 열려 있습니다.",
+    "cta_button": "대화 시작하기",
     "email": "vokhanhlinhdeveloper@gmail.com",
     "phone": "+82 10 2500 0935",
     "name": "Vo Khanh Linh",
@@ -42,7 +49,9 @@
     "Platforms":"플랫폼",
     "Features":"주요 기능",
     "Technologies" :"사용된 기술",
-    "Responsibility":"나의 책임"
+    "Responsibility":"나의 책임",
+    "StoreLinkGooglePlay":"Google Play에서 보기",
+    "StoreLinkAppStore":"App Store에서 보기"
 
   }
 }

@@ -3,11 +3,12 @@ import React, { useState, useEffect } from "react";
 import { FaFacebook,  FaInstagram, FaTiktok, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import removeAccents from "remove-accents"; // Thư viện chuyển đổi không dấu
+// import Image from "next/image";
 
 import botResponses from "@/botResponses";
 
 const FloatingButton: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const [showChatbot, setShowChatbot] = useState(false);
   const [message, setMessage] = useState("");
   const [responses, setResponses] = useState<string[]>([]);
@@ -51,9 +52,9 @@ const FloatingButton: React.FC = () => {
     return () => clearTimeout(greetingTimeout);
   }, [showChatbot]);
 
-  const toggleLinks = () => {
-    setIsOpen(!isOpen);
-  };
+  //  const toggleLinks = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   const handleSendMessage = () => {
     if (!message.trim()) return;
@@ -82,21 +83,38 @@ const FloatingButton: React.FC = () => {
   return (
     <div className="fixed bottom-5 right-5 flex flex-col space-y-2">
       <div className="flex space-x-2">
-        <button
+        {/* Nút mở chatbot dùng GIF */}
+        {/* <button
           onClick={() => setShowChatbot(!showChatbot)}
-          className="bg-green-500 p-3 rounded-full shadow-lg transition-transform transform hover:scale-110"
+          className="rounded-full shadow-lg transition-transform transform hover:scale-110 overflow-hidden bg-transparent"
+          aria-label="Open AI chat"
         >
-          {showChatbot ? "✖️" : "💬"}
-        </button>
-        <button
+          <Image
+            src="/images/ai.gif"
+            alt="AI Chat"
+            width={36}
+            height={36}
+            className="rounded-full object-contain"
+          />
+        </button> */}
+
+        {/* Nút mở danh sách link, cũng dùng GIF (có thể thay bằng GIF khác nếu bạn thêm file) */}
+        {/* <button
           onClick={toggleLinks}
-          className="bg-blue-500 p-3 rounded-full shadow-lg transition-transform transform hover:scale-110"
+          className="rounded-full shadow-lg transition-transform transform hover:scale-110 overflow-hidden bg-transparent"
+          aria-label="Open social links"
         >
-          {isOpen ? "✖️" : "🔗"}
-        </button>
+          <Image
+            src="/images/sns.gif"
+            alt="Links"
+            width={36}
+            height={36}
+            className="rounded-full object-contain"
+          />
+        </button> */}
       </div>
 
-      {isOpen && (
+      {/* {isOpen && ( */}
         <div className="absolute bottom-16 right-0 flex flex-col items-end space-y-2">
           <Link href="https://github.com/Khanhlinh952001" className="bg-gray-800 text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110" target="_blank" rel="noopener noreferrer">
             <FaGithub />
@@ -117,7 +135,7 @@ const FloatingButton: React.FC = () => {
             <FaTiktok />
           </Link>
         </div>
-      )}
+      {/* )} */}
 
       {showChatbot && (
         <div className="absolute bottom-16 right-0 rounded-lg w-96 shadow-lg">

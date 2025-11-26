@@ -9,7 +9,6 @@ import { HeaderPage } from '@/components/UI/Header';
 import Footer from "@/components/UI/Footer";
 import { projects } from '@/data/projects/project';
 import { useTranslations } from "next-intl";
-import VanillaTilt from 'vanilla-tilt';
 
 const Detail: React.FC = () => {
     const params = useParams();
@@ -20,19 +19,7 @@ const Detail: React.FC = () => {
     useEffect(() => {
         AOS.init({ duration: 700 });
     }, []);
-    useEffect(() => {
-        const tiltElements = document.querySelectorAll<HTMLElement>('.tilt');
-        tiltElements.forEach((el) => {
-            if (el instanceof HTMLElement) {
-                VanillaTilt.init(el, {
-                    max: 25,
-                    speed: 200,
-                    glare: true,
-                    "max-glare": 0.5
-                });
-            }
-        });
-    }, []);
+   
 
     const projectData = projects.find((project) => project.id === id);
     if (!projectData) {
@@ -45,7 +32,7 @@ const Detail: React.FC = () => {
         <div>
             <HeaderPage />
             <div className="container mx-auto max-w-7xl px-4 md:px-8">
-                <div className="w-full object-cover rounded-3xl border border-gray-100 dark:border-gray-900 shadow-2xl shadow-gray-600/10 mt-10 tilt">
+                <div className="w-full object-cover rounded-3xl border border-gray-100 dark:border-gray-900 shadow-2xl shadow-gray-600/10 mt-10">
                     <Image
                         data-aos="fade-up"
                         src={projectLocaleData.image?.img}
@@ -83,6 +70,47 @@ const Detail: React.FC = () => {
 
                             <h2 data-aos="fade-right" className="text-xl md:text-2xl font-semibold mb-2">{t('Responsibility')}</h2>
                             <p data-aos="fade-right" className="text-sm md:text-base">{projectLocaleData.responsibilities}</p>
+
+                            {(projectLocaleData.playStoreLink || projectLocaleData.appStoreLink) && (
+                                <div className="flex flex-wrap gap-3 mt-4">
+                                    {projectLocaleData.playStoreLink && (
+                                        <a
+                                            href={projectLocaleData.playStoreLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            data-aos="fade-right"
+                                            className="inline-flex items-center justify-center rounded-lg shadow hover:opacity-90 transition"
+                                        >
+                                            <Image
+                                                src="/images/chplay.png"
+                                                alt={t('StoreLinkGooglePlay')}
+                                                width={160}
+                                                height={48}
+                                                loading="lazy"
+                                                decoding="async"
+                                            />
+                                        </a>
+                                    )}
+                                    {projectLocaleData.appStoreLink && (
+                                        <a
+                                            href={projectLocaleData.appStoreLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            data-aos="fade-right"
+                                            className="inline-flex items-center justify-center rounded-lg shadow hover:opacity-90 transition"
+                                        >
+                                            <Image
+                                                src="/images/appstore.png"
+                                                alt={t('StoreLinkAppStore')}
+                                                width={160}
+                                                height={48}
+                                                loading="lazy"
+                                                decoding="async"
+                                            />
+                                        </a>
+                                    )}
+                                </div>
+                            )}
                         </div>
 
                         <div className="md:w-9/12 w-full">
@@ -109,13 +137,17 @@ const Detail: React.FC = () => {
                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
                                 {projectLocaleData.smallImages.length > 0 ? (
                                     projectLocaleData.smallImages.map((image, index) => (
-                                        <div key={index} data-aos="fade-left" className="rounded-xl border border-gray-100 dark:border-gray-900 shadow-xl shadow-gray-600/10">
+                                        <div
+                                            key={index}
+                                            data-aos="fade-left"
+                                            className="rounded-xl border border-gray-100 dark:border-gray-900 shadow-xl shadow-gray-600/10 bg-white dark:bg-[#111827] flex items-center justify-center p-2"
+                                        >
                                             <Image
                                                 src={image.img}
                                                 alt={image.alt}
-                                                width={450}
-                                                height={450}
-                                                className="object-cover rounded-xl"
+                                                width={400}
+                                                height={800}
+                                                className="rounded-xl w-full h-auto object-contain"
                                                 loading="lazy"
                                                 decoding="async"
                                             />

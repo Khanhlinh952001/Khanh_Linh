@@ -9,26 +9,25 @@ export const Banner: React.FC = () => {
   const t = useTranslations('Info')
 
   return (
-    <div className="max-w-7xl mx-auto">
-     
-     <div className="w-full  h-[600px]">
-  <ComputersCanvas />
-</div>
+    <section className="relative max-w-7xl mx-auto">
+      <div className="w-full h-[600px]">
+        <ComputersCanvas />
+      </div>
 
-      {/* Additional section for projects portfolio can be added here */}
-      <div className="mt-10 lg:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm py-10">
+      {/* Stats strip */}
+      <div className="mt-10 lg:mt-20 px-4">
         <div
           data-aos="fade-up"
           data-aos-duration="500"
-          className="flex flex-wrap justify-center gap-10 container mx-auto font-general-medium"
+          className="max-w-5xl mx-auto flex flex-wrap items-stretch justify-between gap-6 md:gap-10 font-general-medium rounded-3xl bg-slate-900/85 border border-slate-700/70 backdrop-blur-2xl px-6 py-6 md:px-12 md:py-8 shadow-[0_18px_60px_rgba(15,23,42,0.9)]"
         >
           <StatItem value={5} label={t('year')} />
-          <StatItem value="8k+" label={t('github')}  />
-          <StatItem value="92%" label={t('feedback')}  />
-          <StatItem value="89%" label={t('completed')}  />
+          <StatItem value="8k+" label={t('github')} />
+          <StatItem value="92%" label={t('feedback')} />
+          <StatItem value="89%" label={t('completed')} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -41,8 +40,11 @@ const StatItem = ({
   value: string | number;
   label: string;
 }) => (
-  <div className="text-center">
-    <h2 className="text-4xl text-secondary-dark dark:text-secondary-light mb-2">
+  <div className="flex-1 min-w-[130px] text-center md:text-left">
+    <p className="text-[11px] uppercase tracking-[0.22em] text-sky-400/80 mb-1">
+      {label}
+    </p>
+    <h2 className="text-3xl md:text-4xl font-semibold text-white mb-1">
       <CountUp
         end={typeof value === "string" ? parseFloat(value) : value}
         duration={2}
@@ -55,8 +57,6 @@ const StatItem = ({
         }
       />
     </h2>
-    <span className="font-general-regular block text-md text-ternary-dark dark:text-ternary-light">
-      {label}
-    </span>
+    <div className="h-px w-8 mx-auto md:mx-0 mt-2 bg-gradient-to-r from-indigo-400/80 via-sky-400/80 to-transparent" />
   </div>
 );

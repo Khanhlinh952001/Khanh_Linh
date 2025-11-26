@@ -4,12 +4,14 @@ export interface Project {
         name: string;
         description: string;
         platforms: string;
-       image:{img: string,alt:string}
+        image:{img: string,alt:string}
         keyFeatures: string[];
         technologies: string[];
         bigImages: { img: string; alt: string }[];
         smallImages: { img: string; alt: string }[];
         responsibilities: string;
+        playStoreLink?: string;
+        appStoreLink?: string;
     };
     vi: {
         name: string;
@@ -21,6 +23,8 @@ export interface Project {
         bigImages: { img: string; alt: string }[];
         smallImages: { img: string; alt: string }[];
         responsibilities: string;
+        playStoreLink?: string;
+        appStoreLink?: string;
     };
     kr: {
         name: string;
@@ -32,6 +36,8 @@ export interface Project {
         bigImages: { img: string; alt: string }[];
         smallImages: { img: string; alt: string }[];
         responsibilities: string;
+        playStoreLink?: string;
+        appStoreLink?: string;
     };
 }
 
