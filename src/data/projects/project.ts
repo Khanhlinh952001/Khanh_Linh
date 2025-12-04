@@ -854,6 +854,123 @@ export const projects: Project[] = [
             ],
             responsibilities: "Thiết kế UI/UX, phát triển ứng dụng mobile Flutter, tích hợp cộng đồng, review, hóa đơn và hệ thống hạ tầng"
         }
+    },
+    {
+        id: "10",
+        en: {
+            name: "CONNECT24 - Digital Business Card & NFC Card Management",
+            description: "CONNECT24 is a comprehensive business networking application that revolutionizes how professionals exchange and manage digital business cards. With over 8,000 active users, the app enables seamless business card exchange, real-time chat, group networking, partner discovery, and innovative cowork features for startups. Users can create digital business cards, exchange them via NFC or digital sharing, organize contacts in digital notebooks, participate in business meetings and small groups, find ideal business partners based on skills and industry, and leverage cowork features to build startup teams and advance projects.",
+            platforms: "Mobile",
+            appStoreLink: "https://apps.apple.com/us/app/connect24-%EB%94%94%EC%A7%80%ED%84%B8%EB%AA%85%ED%95%A8-%EA%B4%80%EB%A6%AC-nfc%EC%B9%B4%EB%93%9C/id6479285378",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.witive.connect.rep",
+            keyFeatures: [
+                "Digital business card creation and exchange",
+                "NFC card support for instant sharing",
+                "Real-time chat after card exchange",
+                "Business meetings and small group organization",
+                "Business partner discovery by skills, industry, and location",
+                "Digital business card notebook with categorization",
+                "Cowork features for startup team building"
+            ],
+            image: { img: "/thumbnails/connect24/page1.png", alt: "CONNECT24 app thumbnail" },
+            technologies: [
+                "Mobile App Development",
+                "NFC Technology",
+                "Real-time Chat",
+                "Business Networking Platform"
+            ],
+            bigImages: [
+                { img: "/thumbnails/connect24/page1.png", alt: "CONNECT24 main screen" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/connect24/page2.png", alt: "Business card profile screen" },
+                { img: "/thumbnails/connect24/page3.png", alt: "Partner discovery map" },
+                { img: "/thumbnails/connect24/page4.png", alt: "Group networking interface" },
+                { img: "/thumbnails/connect24/page5.png", alt: "Business content management" },
+                { img: "/thumbnails/connect24/page6.png", alt: "Connect interview feature" },
+                { img: "/thumbnails/connect24/page7.png", alt: "Chat interface" },
+                { img: "/thumbnails/connect24/page8.png", alt: "Business card notebook" },
+                { img: "/thumbnails/connect24/page9.png", alt: "Cowork features" },
+                { img: "/thumbnails/connect24/page10.PNG", alt: "Additional features" }
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development, Mobile application development"
+        },
+        kr: {
+            name: "CONNECT24 - 디지털명함, 관리, NFC카드",
+            description: "CONNECT24는 전문가들이 디지털 명함을 교환하고 관리하는 방식을 혁신하는 포괄적인 비즈니스 네트워킹 애플리케이션입니다. 8,000명 이상의 활성 사용자를 보유한 이 앱은 원활한 명함 교환, 실시간 채팅, 그룹 네트워킹, 파트너 발견, 그리고 스타트업을 위한 혁신적인 코웍 기능을 제공합니다. 사용자는 디지털 명함을 생성하고, NFC 또는 디지털 공유를 통해 교환하며, 디지털 명함수첩에서 연락처를 구성하고, 비즈니스 모임 및 소모임에 참여하며, 스킬과 산업을 기반으로 이상적인 비즈니스 파트너를 찾고, 코웍 기능을 활용하여 스타트업 팀을 구축하고 프로젝트를 발전시킬 수 있습니다.",
+            platforms: "모바일",
+            appStoreLink: "https://apps.apple.com/us/app/connect24-%EB%94%94%EC%A7%80%ED%84%B8%EB%AA%85%ED%95%A8-%EA%B4%80%EB%A6%AC-nfc%EC%B9%B4%EB%93%9C/id6479285378",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.witive.connect.rep",
+            keyFeatures: [
+                "디지털 명함 생성 및 교환",
+                "즉시 공유를 위한 NFC 카드 지원",
+                "명함 교환 후 실시간 채팅",
+                "비즈니스 모임 및 소모임 구성",
+                "스킬, 산업 및 위치별 비즈니스 파트너 발견",
+                "분류 기능이 있는 디지털 명함수첩",
+                "스타트업 팀 구축을 위한 코웍 기능"
+            ],
+            image: { img: "/thumbnails/connect24/page1.png", alt: "CONNECT24 앱 썸네일" },
+            technologies: [
+                "모바일 앱 개발",
+                "NFC 기술",
+                "실시간 채팅",
+                "비즈니스 네트워킹 플랫폼"
+            ],
+            bigImages: [
+                { img: "/thumbnails/connect24/page1.png", alt: "CONNECT24 메인 화면" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/connect24/page2.png", alt: "명함 프로필 화면" },
+                { img: "/thumbnails/connect24/page3.png", alt: "파트너 발견 지도" },
+                { img: "/thumbnails/connect24/page4.png", alt: "그룹 네트워킹 인터페이스" },
+                { img: "/thumbnails/connect24/page5.png", alt: "비즈니스 콘텐츠 관리" },
+                { img: "/thumbnails/connect24/page6.png", alt: "커넥트 인터뷰 기능" },
+                { img: "/thumbnails/connect24/page7.png", alt: "채팅 인터페이스" },
+                { img: "/thumbnails/connect24/page8.png", alt: "명함수첩" },
+                { img: "/thumbnails/connect24/page9.png", alt: "코웍 기능" },
+                { img: "/thumbnails/connect24/page10.PNG", alt: "추가 기능" }
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발, 모바일 애플리케이션 개발"
+        },
+        vi: {
+            name: "CONNECT24 - Danh thiếp điện tử & Quản lý thẻ NFC",
+            description: "CONNECT24 là ứng dụng kết nối kinh doanh toàn diện, cách mạng hóa cách các chuyên gia trao đổi và quản lý danh thiếp điện tử. Với hơn 8,000 người dùng tích cực, ứng dụng cho phép trao đổi danh thiếp liền mạch, chat thời gian thực, kết nối nhóm, tìm kiếm đối tác và các tính năng cowork sáng tạo cho startup. Người dùng có thể tạo danh thiếp điện tử, trao đổi qua NFC hoặc chia sẻ kỹ thuật số, tổ chức danh bạ trong sổ danh thiếp kỹ thuật số, tham gia các cuộc họp kinh doanh và nhóm nhỏ, tìm đối tác kinh doanh lý tưởng dựa trên kỹ năng và ngành nghề, và tận dụng các tính năng cowork để xây dựng đội ngũ startup và phát triển dự án.",
+            platforms: "Mobile",
+            appStoreLink: "https://apps.apple.com/us/app/connect24-%EB%94%94%EC%A7%80%ED%84%B8%EB%AA%85%ED%95%A8-%EA%B4%80%EB%A6%AC-nfc%EC%B9%B4%EB%93%9C/id6479285378",
+            playStoreLink: "https://play.google.com/store/apps/details?id=com.witive.connect.rep",
+            keyFeatures: [
+                "Tạo và trao đổi danh thiếp điện tử",
+                "Hỗ trợ thẻ NFC để chia sẻ tức thì",
+                "Chat thời gian thực sau khi trao đổi danh thiếp",
+                "Tổ chức cuộc họp kinh doanh và nhóm nhỏ",
+                "Tìm kiếm đối tác kinh doanh theo kỹ năng, ngành nghề và vị trí",
+                "Sổ danh thiếp điện tử với phân loại",
+                "Tính năng cowork để xây dựng đội ngũ startup"
+            ],
+            image: { img: "/thumbnails/connect24/page1.png", alt: "Thumbnail ứng dụng CONNECT24" },
+            technologies: [
+                "Phát triển ứng dụng Mobile",
+                "Công nghệ NFC",
+                "Chat thời gian thực",
+                "Nền tảng kết nối kinh doanh"
+            ],
+            bigImages: [
+                { img: "/thumbnails/connect24/page1.png", alt: "Màn hình chính CONNECT24" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/connect24/page2.png", alt: "Màn hình hồ sơ danh thiếp" },
+                { img: "/thumbnails/connect24/page3.png", alt: "Bản đồ tìm kiếm đối tác" },
+                { img: "/thumbnails/connect24/page4.png", alt: "Giao diện kết nối nhóm" },
+                { img: "/thumbnails/connect24/page5.png", alt: "Quản lý nội dung kinh doanh" },
+                { img: "/thumbnails/connect24/page6.png", alt: "Tính năng phỏng vấn Connect" },
+                { img: "/thumbnails/connect24/page7.png", alt: "Giao diện chat" },
+                { img: "/thumbnails/connect24/page8.png", alt: "Sổ danh thiếp" },
+                { img: "/thumbnails/connect24/page9.png", alt: "Tính năng cowork" },
+                { img: "/thumbnails/connect24/page10.PNG", alt: "Tính năng bổ sung" }
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend, Phát triển ứng dụng Mobile"
+        }
     }
     
     
