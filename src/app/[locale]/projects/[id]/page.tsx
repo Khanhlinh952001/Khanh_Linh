@@ -31,7 +31,7 @@ const Detail: React.FC = () => {
     return (
         <div>
             <HeaderPage />
-            <div className="container mx-auto max-w-7xl px-4 md:px-8">
+            <div className="container mx-auto max-w-7xl px-4 md:px-8 pb-16 md:pb-24">
                 <div className="w-full object-cover rounded-3xl border border-gray-100 dark:border-gray-900 shadow-2xl shadow-gray-600/10 mt-10">
                     <Image
                         data-aos="fade-up"
@@ -134,7 +134,7 @@ const Detail: React.FC = () => {
                                 )}
                             </div>
 
-                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6 mb-8 md:mb-12">
                                 {projectLocaleData.smallImages.length > 0 ? (
                                     projectLocaleData.smallImages.map((image, index) => (
                                         <div

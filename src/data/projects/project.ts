@@ -90,256 +90,6 @@ export const projects: Project[] = [
         }
     },
     {
-        id: "2",
-        vi: {
-            name: "Luyện thi Topik 6",
-            description: "Ứng dụng hỗ trợ ôn thi Topik cấp độ 6 với các chức năng như làm bài thi nghe và đọc, kiểm tra kết quả ngay lập tức và hướng dẫn sửa bài chi tiết. Phù hợp cho người học tiếng Hàn muốn nâng cao kỹ năng ngôn ngữ và chuẩn bị cho kỳ thi Topik.",
-            platforms: "Website and Mobile",
-            keyFeatures: [
-                "Làm bài thi nghe",
-                "Làm bài đọc",
-                "Biết điểm ngay",
-                "Hướng dẫn sửa bài"
-            ],
-            image: { img: '/thumbnails/KOREA.png', alt: "Thumbnails" },
-            technologies: [
-                "NextJs",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/KOREA.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/korea/1.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/korea/2.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/korea/3.png", alt: "Home screen of the app" }
-            ],
-            smallImages: [
-                { img: "/thumbnails/korea/4.png", alt: "Home screen of the app" }
-            ],
-            responsibilities: "UI/UX_BE_FE"
-        },
-        en: {
-            name: "Topik 6 Exam Preparation",
-            description: "An application designed to help users prepare for the Topik level 6 exam with features such as listening and reading tests, instant scoring, and detailed answer guidance. Ideal for Korean language learners aiming to improve their skills and succeed in the Topik exam.",
-            platforms: "Website and Mobile",
-            keyFeatures: [
-                "Listening tests",
-                "Reading tests",
-                "Instant scoring",
-                "Answer guidance"
-            ],
-            image: { img: '/thumbnails/KOREA.png', alt: "Thumbnails" },
-            technologies: [
-                "NextJs",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/KOREA.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/Korea/1.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/Korea/2.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/Korea/3.png", alt: "Home screen of the app" }
-            ],
-            smallImages: [
-                { img: "/thumbnails/Korea/4.png", alt: "Home screen of the app" }
-            ],
-            responsibilities: "UI/UX_BE_FE"
-        },
-        kr: {
-            name: "토픽 6급 시험 준비",
-            description: "듣기 및 읽기 시험, 즉각적인 점수 확인, 상세한 답안 안내와 같은 기능을 갖춘 토픽 6급 시험 준비용 애플리케이션입니다. 한국어 실력을 향상하고 토픽 시험에 성공하고자 하는 학습자에게 이상적입니다.",
-            platforms: "웹사이트 및 모바일",
-            keyFeatures: [
-                "듣기 시험",
-                "읽기 시험",
-                "즉각적인 점수 확인",
-                "답안 안내"
-            ],
-            image: { img: '/thumbnails/KOREA.png', alt: "썸네일" },
-            technologies: [
-                "NextJs",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/KOREA.png", alt: "앱 홈 화면" },
-                { img: "/thumbnails/Korea/1.png", alt: "앱 홈 화면" },
-                { img: "/thumbnails/Korea/2.png", alt: "앱 홈 화면" },
-                { img: "/thumbnails/Korea/3.png", alt: "앱 홈 화면" }
-            ],
-            smallImages: [
-                { img: "/thumbnails/Korea/4.png", alt: "앱 홈 화면" }
-            ],
-            responsibilities: "UI/UX_BE_FE"
-        }
-    },
-    {
-        id: "3",
-        vi: {
-            name: "Website Mua Sắm",
-            description: "GLOBIMART - Nền tảng mua sắm trực tuyến hiện đại, mang đến trải nghiệm mua sắm dễ dàng và tiện lợi.",
-            platforms: "Website",
-            keyFeatures: [
-                "Giao diện thân thiện và dễ sử dụng",
-                "Tích hợp thanh toán trực tuyến",
-                "Quản lý giỏ hàng tiện lợi"
-            ],
-            image: { img: '/thumbnails/GLOBIMART.png', alt: "Thumbnail của GLOBIMART" },
-            technologies: [
-                "Next.js",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/GLOBIMART.png", alt: "Màn hình chính của ứng dụng" },
-                { img: "/thumbnails/Globimart/4.png", alt: "Màn hình sản phẩm" },
-                { img: "/thumbnails/Globimart/5.png", alt: "Màn hình giỏ hàng" },
-                { img: "/thumbnails/Globimart/6.png", alt: "Màn hình thanh toán" },
-                { img: "/thumbnails/Globimart/7.png", alt: "Màn hình tài khoản người dùng" }
-            ],
-            smallImages: [
-                // { img: "/thumbnails/Korea/4.png", alt: "Màn hình ứng dụng trên thiết bị di động" }
-            ],
-            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
-        },
-        en: {
-            name: "Shopping Website",
-            description: "GLOBIMART - A modern online shopping platform that provides a seamless and convenient shopping experience.",
-            platforms: "Website",
-            keyFeatures: [
-                "User-friendly and easy-to-navigate interface",
-                "Integrated online payment",
-                "Convenient shopping cart management"
-            ],
-            image: { img: '/thumbnails/GLOBIMART.png', alt: "GLOBIMART Thumbnail" },
-            technologies: [
-                "Next.js",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/GLOBIMART.png", alt: "Home screen of the app" },
-                { img: "/thumbnails/Globimart/4.png", alt: "Product screen" },
-                { img: "/thumbnails/Globimart/5.png", alt: "Cart screen" },
-                { img: "/thumbnails/Globimart/6.png", alt: "Checkout screen" },
-                { img: "/thumbnails/Globimart/7.png", alt: "User account screen" }
-            ],
-            smallImages: [
-                // { img: "/thumbnails/Korea/4.png", alt: "Mobile app screen" }
-            ],
-            responsibilities: "UI/UX design, Backend and Frontend development"
-        },
-        kr: {
-            name: "쇼핑 웹사이트",
-            description: "GLOBIMART - 매끄럽고 편리한 쇼핑 경험을 제공하는 현대적인 온라인 쇼핑 플랫폼입니다.",
-            platforms: "웹사이트",
-            keyFeatures: [
-                "사용자 친화적이고 탐색하기 쉬운 인터페이스",
-                "온라인 결제 통합",
-                "편리한 장바구니 관리"
-            ],
-            image: { img: '/thumbnails/GLOBIMART.png', alt: "GLOBIMART 썸네일" },
-            technologies: [
-                "Next.js",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/GLOBIMART.png", alt: "앱의 홈 화면" },
-                { img: "/thumbnails/Globimart/4.png", alt: "제품 화면" },
-                { img: "/thumbnails/Globimart/5.png", alt: "장바구니 화면" },
-                { img: "/thumbnails/Globimart/6.png", alt: "결제 화면" },
-                { img: "/thumbnails/Globimart/7.png", alt: "사용자 계정 화면" }
-            ],
-            smallImages: [
-                // { img: "/thumbnails/Korea/4.png", alt: "모바일 앱 화면" }
-            ],
-            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
-        }
-    },
-    {
-        id: "4",
-        vi: {
-            name: "Doash",
-            description: "Doash - Nền tảng quản lý đơn hàng và phân tích dữ liệu, giúp người dùng dễ dàng theo dõi và tối ưu hóa quy trình mua sắm.",
-            platforms: "Website",
-            keyFeatures: [
-                "Quản lý đơn hàng hiệu quả",
-                "Phân tích dữ liệu chi tiết",
-                "Giao diện thân thiện với người dùng"
-            ],
-            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Thumbnail của Doash" },
-            technologies: [
-                "Next.js",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Màn hình chính của ứng dụng Doash" },
-                { img: "/thumbnails/Globimart/1.png", alt: "Màn hình sản phẩm" },
-                { img: "/thumbnails/Globimart/2.png", alt: "Màn hình giỏ hàng" },
-                { img: "/thumbnails/Globimart/3.png", alt: "Màn hình thanh toán" },
-            ],
-            smallImages: [
-                // Có thể thêm hình ảnh nhỏ nếu cần
-            ],
-            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
-        },
-        en: {
-            name: "Doash",
-            description: "Doash - An order management and data analytics platform that enables users to efficiently track and optimize their shopping processes.",
-            platforms: "Website",
-            keyFeatures: [
-                "Efficient order management",
-                "Detailed data analytics",
-                "User-friendly interface"
-            ],
-            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Thumbnail of Doash" },
-            technologies: [
-                "Next.js",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Main screen of the Doash application" },
-                { img: "/thumbnails/Globimart/1.png", alt: "Product screen" },
-                { img: "/thumbnails/Globimart/2.png", alt: "Cart screen" },
-                { img: "/thumbnails/Globimart/3.png", alt: "Checkout screen" },
-            ],
-            smallImages: [
-                // Can add small images if needed
-            ],
-            responsibilities: "UI/UX design, Backend and Frontend development"
-        },
-        kr: {
-            name: "도시",
-            description: "Doash - 주문 관리 및 데이터 분석 플랫폼으로, 사용자가 쇼핑 프로세스를 효율적으로 추적하고 최적화할 수 있도록 도와줍니다.",
-            platforms: "웹사이트",
-            keyFeatures: [
-                "효율적인 주문 관리",
-                "상세한 데이터 분석",
-                "사용자 친화적인 인터페이스"
-            ],
-            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Doash 썸네일" },
-            technologies: [
-                "Next.js",
-                "Firebase",
-                "Tailwind CSS"
-            ],
-            bigImages: [
-                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Doash 애플리케이션의 메인 화면" },
-                { img: "/thumbnails/Globimart/1.png", alt: "제품 화면" },
-                { img: "/thumbnails/Globimart/2.png", alt: "장바구니 화면" },
-                { img: "/thumbnails/Globimart/3.png", alt: "결제 화면" },
-            ],
-            smallImages: [
-                // 필요한 경우 작은 이미지를 추가할 수 있습니다.
-            ],
-            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
-        }
-    }
-,    
-    {
         id: "5",
         vi: {
             name: "Shop_VGO",
@@ -527,6 +277,255 @@ export const projects: Project[] = [
                 { img: "/thumbnails/delivery/2.png", alt: "주문 추적 화면" },
                 { img: "/thumbnails/delivery/3.png", alt: "배송 알림 화면" },
                 { img: "/thumbnails/delivery/4.png", alt: "사용자 인터페이스" },
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
+        }
+    },
+    {
+        id: "2",
+        vi: {
+            name: "Luyện thi Topik 6",
+            description: "Ứng dụng hỗ trợ ôn thi Topik cấp độ 6 với các chức năng như làm bài thi nghe và đọc, kiểm tra kết quả ngay lập tức và hướng dẫn sửa bài chi tiết. Phù hợp cho người học tiếng Hàn muốn nâng cao kỹ năng ngôn ngữ và chuẩn bị cho kỳ thi Topik.",
+            platforms: "Website and Mobile",
+            keyFeatures: [
+                "Làm bài thi nghe",
+                "Làm bài đọc",
+                "Biết điểm ngay",
+                "Hướng dẫn sửa bài"
+            ],
+            image: { img: '/thumbnails/korea/page1.png', alt: "Thumbnails" },
+            technologies: [
+                "NextJs",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/korea/page1.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/page1.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/page2.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/page3.png", alt: "Home screen of the app" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/korea/page4.png", alt: "Home screen of the app" }
+            ],
+            responsibilities: "UI/UX_BE_FE"
+        },
+        en: {
+            name: "Topik 6 Exam Preparation",
+            description: "An application designed to help users prepare for the Topik level 6 exam with features such as listening and reading tests, instant scoring, and detailed answer guidance. Ideal for Korean language learners aiming to improve their skills and succeed in the Topik exam.",
+            platforms: "Website and Mobile",
+            keyFeatures: [
+                "Listening tests",
+                "Reading tests",
+                "Instant scoring",
+                "Answer guidance"
+            ],
+            image: { img: '/thumbnails/korea/page1.png', alt: "Thumbnails" },
+            technologies: [
+                "NextJs",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/korea/page1.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/page1.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/page2.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/korea/page3.png", alt: "Home screen of the app" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/korea/page4.png", alt: "Home screen of the app" }
+            ],
+            responsibilities: "UI/UX_BE_FE"
+        },
+        kr: {
+            name: "토픽 6급 시험 준비",
+            description: "듣기 및 읽기 시험, 즉각적인 점수 확인, 상세한 답안 안내와 같은 기능을 갖춘 토픽 6급 시험 준비용 애플리케이션입니다. 한국어 실력을 향상하고 토픽 시험에 성공하고자 하는 학습자에게 이상적입니다.",
+            platforms: "웹사이트 및 모바일",
+            keyFeatures: [
+                "듣기 시험",
+                "읽기 시험",
+                "즉각적인 점수 확인",
+                "답안 안내"
+            ],
+            image: { img: '/thumbnails/korea/page1.png', alt: "썸네일" },
+            technologies: [
+                "NextJs",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/korea/page1.png", alt: "앱 홈 화면" },
+                { img: "/thumbnails/korea/page1.png", alt: "앱 홈 화면" },
+                { img: "/thumbnails/korea/page2.png", alt: "앱 홈 화면" },
+                { img: "/thumbnails/korea/page3.png", alt: "앱 홈 화면" }
+            ],
+            smallImages: [
+                { img: "/thumbnails/korea/page4.png", alt: "앱 홈 화면" }
+            ],
+            responsibilities: "UI/UX_BE_FE"
+        }
+    },
+    {
+        id: "3",
+        vi: {
+            name: "Website Mua Sắm",
+            description: "GLOBIMART - Nền tảng mua sắm trực tuyến hiện đại, mang đến trải nghiệm mua sắm dễ dàng và tiện lợi.",
+            platforms: "Website",
+            keyFeatures: [
+                "Giao diện thân thiện và dễ sử dụng",
+                "Tích hợp thanh toán trực tuyến",
+                "Quản lý giỏ hàng tiện lợi"
+            ],
+            image: { img: '/thumbnails/GLOBIMART.png', alt: "Thumbnail của GLOBIMART" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART.png", alt: "Màn hình chính của ứng dụng" },
+                { img: "/thumbnails/Globimart/4.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/Globimart/5.png", alt: "Màn hình giỏ hàng" },
+                { img: "/thumbnails/Globimart/6.png", alt: "Màn hình thanh toán" },
+                { img: "/thumbnails/Globimart/7.png", alt: "Màn hình tài khoản người dùng" }
+            ],
+            smallImages: [
+                // { img: "/thumbnails/Korea/4.png", alt: "Màn hình ứng dụng trên thiết bị di động" }
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
+        },
+        en: {
+            name: "Shopping Website",
+            description: "GLOBIMART - A modern online shopping platform that provides a seamless and convenient shopping experience.",
+            platforms: "Website",
+            keyFeatures: [
+                "User-friendly and easy-to-navigate interface",
+                "Integrated online payment",
+                "Convenient shopping cart management"
+            ],
+            image: { img: '/thumbnails/GLOBIMART.png', alt: "GLOBIMART Thumbnail" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART.png", alt: "Home screen of the app" },
+                { img: "/thumbnails/Globimart/4.png", alt: "Product screen" },
+                { img: "/thumbnails/Globimart/5.png", alt: "Cart screen" },
+                { img: "/thumbnails/Globimart/6.png", alt: "Checkout screen" },
+                { img: "/thumbnails/Globimart/7.png", alt: "User account screen" }
+            ],
+            smallImages: [
+                // { img: "/thumbnails/Korea/4.png", alt: "Mobile app screen" }
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development"
+        },
+        kr: {
+            name: "쇼핑 웹사이트",
+            description: "GLOBIMART - 매끄럽고 편리한 쇼핑 경험을 제공하는 현대적인 온라인 쇼핑 플랫폼입니다.",
+            platforms: "웹사이트",
+            keyFeatures: [
+                "사용자 친화적이고 탐색하기 쉬운 인터페이스",
+                "온라인 결제 통합",
+                "편리한 장바구니 관리"
+            ],
+            image: { img: '/thumbnails/GLOBIMART.png', alt: "GLOBIMART 썸네일" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART.png", alt: "앱의 홈 화면" },
+                { img: "/thumbnails/Globimart/4.png", alt: "제품 화면" },
+                { img: "/thumbnails/Globimart/5.png", alt: "장바구니 화면" },
+                { img: "/thumbnails/Globimart/6.png", alt: "결제 화면" },
+                { img: "/thumbnails/Globimart/7.png", alt: "사용자 계정 화면" }
+            ],
+            smallImages: [
+                // { img: "/thumbnails/Korea/4.png", alt: "모바일 앱 화면" }
+            ],
+            responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
+        }
+    },
+    {
+        id: "4",
+        vi: {
+            name: "Doash",
+            description: "Doash - Nền tảng quản lý đơn hàng và phân tích dữ liệu, giúp người dùng dễ dàng theo dõi và tối ưu hóa quy trình mua sắm.",
+            platforms: "Website",
+            keyFeatures: [
+                "Quản lý đơn hàng hiệu quả",
+                "Phân tích dữ liệu chi tiết",
+                "Giao diện thân thiện với người dùng"
+            ],
+            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Thumbnail của Doash" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Màn hình chính của ứng dụng Doash" },
+                { img: "/thumbnails/Globimart/1.png", alt: "Màn hình sản phẩm" },
+                { img: "/thumbnails/Globimart/2.png", alt: "Màn hình giỏ hàng" },
+                { img: "/thumbnails/Globimart/3.png", alt: "Màn hình thanh toán" },
+            ],
+            smallImages: [
+                // Có thể thêm hình ảnh nhỏ nếu cần
+            ],
+            responsibilities: "Thiết kế UI/UX, Phát triển Backend và Frontend"
+        },
+        en: {
+            name: "Doash",
+            description: "Doash - An order management and data analytics platform that enables users to efficiently track and optimize their shopping processes.",
+            platforms: "Website",
+            keyFeatures: [
+                "Efficient order management",
+                "Detailed data analytics",
+                "User-friendly interface"
+            ],
+            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Thumbnail of Doash" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Main screen of the Doash application" },
+                { img: "/thumbnails/Globimart/1.png", alt: "Product screen" },
+                { img: "/thumbnails/Globimart/2.png", alt: "Cart screen" },
+                { img: "/thumbnails/Globimart/3.png", alt: "Checkout screen" },
+            ],
+            smallImages: [
+                // Can add small images if needed
+            ],
+            responsibilities: "UI/UX design, Backend and Frontend development"
+        },
+        kr: {
+            name: "도시",
+            description: "Doash - 주문 관리 및 데이터 분석 플랫폼으로, 사용자가 쇼핑 프로세스를 효율적으로 추적하고 최적화할 수 있도록 도와줍니다.",
+            platforms: "웹사이트",
+            keyFeatures: [
+                "효율적인 주문 관리",
+                "상세한 데이터 분석",
+                "사용자 친화적인 인터페이스"
+            ],
+            image: { img: '/thumbnails/GLOBIMART_DASH.png', alt: "Doash 썸네일" },
+            technologies: [
+                "Next.js",
+                "Firebase",
+                "Tailwind CSS"
+            ],
+            bigImages: [
+                { img: "/thumbnails/GLOBIMART_DASH.png", alt: "Doash 애플리케이션의 메인 화면" },
+                { img: "/thumbnails/Globimart/1.png", alt: "제품 화면" },
+                { img: "/thumbnails/Globimart/2.png", alt: "장바구니 화면" },
+                { img: "/thumbnails/Globimart/3.png", alt: "결제 화면" },
+            ],
+            smallImages: [
+                // 필요한 경우 작은 이미지를 추가할 수 있습니다.
             ],
             responsibilities: "UI/UX 디자인, 백엔드 및 프론트엔드 개발"
         }
